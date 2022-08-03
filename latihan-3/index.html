@@ -5,23 +5,151 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./../assets/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Document</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-transparent">
-      <div class="container-fluid d-flex justify-content-between px-lg-5">
-        <a href="#" class="navbar-brand fs-1">L</a>
-        <ul class="d-flex justify-content-between pt-3">
-          <li><a href="#"></a>About</li>
-          <li><a href="#"></a>Article</li>
-          <li><a href="#" ></a>Subcribe</li>
-        </ul>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-transparent">
+        <div class="container-fluid d-flex justify-content-between px-lg-5">
+          <a href="#" class="navbar-brand fs-1 text-dark brand-logo">L</a>
+
+          <div class="menu-navbar d-flex justify-content-between">
+            <a href="#about">about</a>
+            <a href="#articles">articles</a>
+            <a href="#subscribe" class="active">subscribe</a>
+          </div>
+          <div class="menu-toggle">
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </nav>
+
+      <section class="hero d-flex">
+        <div class="container">
+          <h1>Lava</h1>
+          <h2>a human exploration</h2>
+          <div class="line-lg"></div>
+        </div>
+      </section>
+
+      <section class="about text-center d-flex align-items-center" id="about">
+        <div class="container">
+          <div class="about-content">
+            <h1>Slow travelling</h1>
+            <h5 class="text-uppercase">a travel blog</h5>
+            <div class="line-md"></div>
+
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum a
+              eius quasi nostrum sint neque obcaecati! Commodi quam ducimus
+              quia, corrupti voluptate dolorem provident adipisci eius
+              temporibus earum cupiditate dignissimos in omnis rerum minima
+              dicta veniam exercitationem at placeat eum.
+            </p>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <section class="articles text-center" id="articles">
+      <div class="container">
+        <h1>Latest articles</h1>
+        <h5 class="text-uppercase">our most recent posts</h5>
+        <div class="line-md"></div>
+        <div class="image-wrapper row pt-5">
+          <div class="col-md-4 mb-3">
+            <div class="image-box">
+              <img
+                src="./assets/img/boat.jpg"
+                alt="boat"
+                class="shadow-lg img-fluid"
+              />
+              <div
+                class="caption d-flex flex-column align-items-center justify-content-center text-uppercase"
+              >
+                <div
+                  class="caption-title d-flex justify-content-center flex-column"
+                >
+                  <h2>tunza</h2>
+                  <span>rugged port</span>
+                  <div class="line-sm mx-auto"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="image-box">
+              <img
+                src="./assets/img/street.jpg"
+                alt="boat"
+                class="shadow-lg img-fluid"
+              />
+              <div
+                class="caption d-flex flex-column align-items-center justify-content-center text-uppercase"
+              >
+                <div
+                  class="caption-title d-flex justify-content-center flex-column"
+                >
+                  <h2>timor</h2>
+                  <span>untouched beaches</span>
+                  <div class="line-sm mx-auto"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="image-box">
+              <img
+                src="./assets/img/stone.jpg"
+                alt="boat"
+                class="shadow-lg img-fluid"
+              />
+              <div
+                class="caption d-flex flex-column align-items-center justify-content-center text-uppercase"
+              >
+                <div
+                  class="caption-title d-flex justify-content-center flex-column"
+                >
+                  <h2>lombok</h2>
+                  <span>endless lava</span>
+                  <div class="line-sm mx-auto"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </nav>
+    </section>
+
+    <section
+      class="subscribe d-flex align-items-center justify-content-center text-center"
+      id="subscribe"
+    >
+      <div class="container">
+        <h1 class="mb-3">Subscribe</h1>
+        <h5 class="text-uppercase mb-3">sign-up to our newslatter</h5>
+        <input type="text" placeholder="Your email" /><br />
+        <button type="submit" class="text-uppercase">submit</button>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div
+          class="footer-content d-flex justify-content-between align-items-center"
+        >
+          <h1>L</h1>
+          <div class="menu-navbar d-flex justify-content-between">
+            <a href="#about">about</a>
+            <a href="#articles">articles</a>
+            <a href="#subscribe">subscribe</a>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <!-- Script JS Bootstrap -->
     <script src="./../assets/js/bootstrap.min.js"></script>
-    <script src="./../assets/js/bootstrap.bundle.js"></script>
   </body>
 </html>

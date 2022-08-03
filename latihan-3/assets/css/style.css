@@ -1,9 +1,336 @@
-ul {
-    width: 40%;
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,500&family=DM+Serif+Display&family=Zen+Old+Mincho:wght@900&display=swap");
+
+* {
+  font-family: "Josefin Sans", sans-serif;
 }
-ul li {
-    list-style: none;
+
+/* Global Class */
+h1 {
+  font-family: "Zen Old Mincho", serif;
 }
-a {
-    text-decoration: none;
+
+.line-lg {
+  width: 100px;
+  height: 4px;
+  background-color: #9ba5a3;
+}
+
+.line-md {
+  width: 100px;
+  height: 2px;
+  margin: auto;
+  margin-bottom: 30px;
+  margin-top: 20px;
+  background-color: #9ba5a3;
+}
+
+.line-sm {
+  width: 50px;
+  height: 2px;
+  margin-top: 20px;
+  background-color: white;
+}
+
+a,
+a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+/* Header */
+header {
+  height: 200vh;
+  background-image: url("./../img/image.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.brand-logo {
+  font-family: "Zen Old Mincho", serif;
+}
+
+header .menu-navbar {
+  width: 40%;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+header .menu-navbar a {
+  padding: 10px 25px;
+}
+
+header .menu-navbar a:not(:last-child){
+  margin-right: 20px ;
+}
+
+.active {
+  border: 2px solid white;
+  padding: 5px 50px;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+.menu-toggle span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin-bottom: 5px;
+  border-radius: 3px;
+}
+
+/* Hero */
+.hero {
+  height: 100vh;
+  align-items: center;
+}
+.hero h1 {
+  font-size: 120px;
+  color: white;
+  margin-top: 200px;
+}
+
+.hero h2 {
+  text-transform: uppercase;
+  color: #5fced5;
+}
+
+/* About */
+.about {
+  height: 80vh;
+  width: 100%;
+  padding: 0px 350px;
+}
+
+.about .about-content h1 {
+  color: white;
+  font-size: 60px;
+}
+
+.about .about-content h5 {
+  color: #9ba5a3;
+}
+
+.about .about-content p {
+  color: #9ba5a3;
+}
+
+/* articles */
+.articles {
+  height: 170vh;
+  background-color: #393939;
+  padding: 150px 0px;
+}
+
+.articles h1 {
+  color: white;
+  font-size: 60px;
+}
+
+.articles h5 {
+  color: #9ba5a3;
+}
+
+.image-box {
+  position: relative;
+  overflow: hidden;
+}
+
+.articles .image-wrapper .image-box .caption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  color: #ffffff;
+  opacity: 0;
+  transition: opacity 0.25s;
+  cursor: pointer;
+}
+
+.articles .image-wrapper .image-box:hover img {
+  transform: scale(1.06);
+  transition: all 0.5s ease-in-out;
+}
+
+.articles .image-wrapper .image-box .caption .caption-title {
+  position: relative;
+  top: 30%;
+}
+
+.articles .image-wrapper .image-box .caption > * {
+  transform: translateY(20px);
+  transition: transform 0.25s;
+}
+
+.articles .image-wrapper .image-box .caption:hover > * {
+  transform: translateY(0);
+}
+
+.articles .image-wrapper .image-box .caption h2 {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.articles .image-wrapper .image-box .caption span {
+  font-size: 1.25em;
+  margin-top: 0.25em;
+}
+.articles .image-wrapper .image-box .caption:hover {
+  opacity: 1;
+}
+
+.articles .image-wrapper .image-box h3,
+.articles .image-wrapper .image-box h6 {
+  text-transform: uppercase;
+  color: white;
+}
+
+/* Subscribe */
+.subscribe {
+  height: 70vh;
+  background-color: #2e2e2e;
+}
+
+.subscribe input {
+  width: 40%;
+  height: 60px;
+  padding: 0px 20px;
+  background-color: #464646;
+  border: none;
+  outline: none;
+  color: white;
+  border: 2px solid #9ba5a3;
+}
+
+.subscribe button {
+  width: 160px;
+  height: 50px;
+  letter-spacing: 5px;
+  outline: none;
+  border: 2px solid #9ba5a3;
+  color: white;
+  margin-top: 30px;
+  background-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.subscribe button:hover {
+  background-color: white;
+  border: none;
+  color: #2e2e2e;
+}
+
+.subscribe h1 {
+  color: white;
+}
+
+.subscribe h5 {
+  color: #9ba5a3;
+}
+
+/* Footer */
+footer {
+  height: 30vh;
+  background-color: #393939;
+  color: white;
+}
+
+footer .footer-content {
+  height: 30vh;
+}
+
+footer .menu-navbar {
+  width: 40%;
+  text-transform: uppercase;
+}
+
+
+@media screen and (max-width: 576px) {
+  header {
+    height: 160vh;
+  }
+  header .menu-navbar a {
+    display: none;
+  }
+
+  .brand-logo {
+    visibility: hidden;
+  }
+  .menu-toggle {
+    display: block;
+  }
+
+  /* hero */
+  .hero h1 {
+    font-size: 70px;
+    color: white;
+    margin-top: 100px;
+    margin: 15px 0px;
+  }
+
+  .hero h2 {
+    font-size: 20px;
+    margin: 15px 0px;
+  }
+
+  /* About */
+  .about {
+    padding: 0px;
+  }
+
+  .about .about-content h1 {
+    font-size: 35px;
+  }
+
+  .about .about-content h5 {
+    font-size: 18px;
+  }
+
+  .about .about-content p {
+    text-align: start;
+  }
+
+  /* articles */
+  .articles {
+    height: 300vh;
+    background-color: #2e2e2e;
+  }
+
+  .articles h1 {
+    font-size: 35px;
+  }
+
+  .articles h5 {
+    font-size: 18px;
+  }
+
+  /* subcribe */
+  .subscribe h1 {
+    font-size: 38px;
+  }
+  .subscribe h5 {
+    font-size: 15px;
+  }
+  .subscribe input,
+  .subscribe button {
+    width: 100%;
+    margin-top: 15px;
+  }
+  footer .footer-content h1 {
+    display: none;
+  }
+  footer .menu-navbar{
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+    letter-spacing: 3px;
+    line-height: 40px;
+    padding: 0px;
+  }
 }
