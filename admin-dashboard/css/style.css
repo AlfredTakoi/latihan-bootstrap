@@ -1,0 +1,160 @@
+/* Global Style */
+.line {
+    width: 100%;
+    height: 6px;
+    background-color: white;
+}
+.line .left {
+    width: 70%;
+    height: 100%;
+    background-color: red;
+}
+
+line .right {
+    width: 30%;
+    height: 100%;
+    background-color: white;
+}
+.w-40 {
+  width: 45%;
+}
+
+.main-app {
+  width: 100%;
+  height: 170vh;
+}
+
+.main-app .sidebar {
+  width: 25%;
+  /* display: none; */
+  font-size: 13px;
+}
+
+.main-app .sidebar .image-box {
+  width: 40px;
+  height: 40px;
+}
+
+.main-app .sidebar .main-menu .menu-item {
+  height: 50px;
+  border-bottom: 1px solid rgb(46, 46, 46);
+  padding: 12px 0px;
+}
+
+.main-app .sidebar .main-menu .menu-item .dashboard-title > i {
+  margin-right: 23px;
+}
+.main-app .sidebar .main-menu .menu-item .title i {
+  margin-right: 19px;
+}
+
+.main-app .sidebar .main-menu .menu-item span {
+  margin-right: 7px;
+}
+
+.main-app .sidebar .image-box img {
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 28px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0px;
+  background-color: #ea5a39;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 28px;
+  width: 27px;
+  left: 0px;
+  top: 0;
+  bottom: 0px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #88be4b;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Main Content */
+.main-app .main-content {
+  width: 100%;
+  height: 181vh;
+  background-color: #e7e9f0;
+}
+header {
+  height: 71px;
+}
+
+nav {
+  height: 71px;
+}
+
+nav .icon-notification {
+  width: 35%;
+  align-items: center;
+}
+
+nav .image-box {
+  width: 50px;
+  height: 50px;
+}
+
+nav .image-box img {
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+}
+
+/* Dashboard */
+.dashboard .today .box {
+  width: 243px;
+  height: 230px;
+  background-image: url('./../img/bubble.png');
+}
+
+.dashboard .today .image-box img {
+    width: 243px;
+    height: 230px;
+    object-fit: cover;
+}
+
+
+
