@@ -1,19 +1,72 @@
 /* Global Style */
+p {
+  margin: 0;
+}
+
+button {
+  border: none;
+}
+
+.bg-facebook {
+  background-color: #4c66a1;
+}
+
+.bg-twitter {
+  background-color: #52aeed;
+}
+
+.bg-basketball {
+  background-color: #dd4d8a;
+}
+
+.bg-linkedin {
+  background-color: #0085b0;
+}
+
+.background-primary {
+  background-color: #8fc051;
+}
+
+.background-primary-2 {
+  background-color: #699e31;
+}
+.text-primary-2 {
+  color: #699e31;
+}
+
+.background-success {
+  background-color: #3baeda;
+}
+
+.background-success-2 {
+  background-color: #2e98c7;
+}
+
+.background-secondary {
+  background-color: #37bd9c;
+}
+
+.background-third {
+  background-color: #ef5440;
+}
+
+.background-fourth {
+  background-color: #f4bc44;
+}
+
 .line {
-    width: 100%;
-    height: 6px;
-    background-color: white;
+  width: 100%;
+  height: 6px;
+  background-color: white;
 }
 .line .left {
-    width: 70%;
-    height: 100%;
-    background-color: red;
+  width: 70%;
+  height: 100%;
 }
 
 line .right {
-    width: 30%;
-    height: 100%;
-    background-color: white;
+  width: 30%;
+  height: 100%;
 }
 .w-40 {
   width: 45%;
@@ -21,7 +74,7 @@ line .right {
 
 .main-app {
   width: 100%;
-  height: 170vh;
+  height: 500vh;
 }
 
 .main-app .sidebar {
@@ -116,7 +169,7 @@ input:checked + .slider:before {
 /* Main Content */
 .main-app .main-content {
   width: 100%;
-  height: 181vh;
+  height: 500vh;
   background-color: #e7e9f0;
 }
 header {
@@ -147,14 +200,203 @@ nav .image-box img {
 .dashboard .today .box {
   width: 243px;
   height: 230px;
-  background-image: url('./../img/bubble.png');
 }
 
-.dashboard .today .image-box img {
-    width: 243px;
-    height: 230px;
-    object-fit: cover;
+.dashboard .today .box img {
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
 }
 
+.dashboard .today .box .background {
+  width: inherit;
+  height: inherit;
+  opacity: 0.8;
+}
 
+.dashboard .today .box .content {
+  width: inherit;
+  height: inherit;
+}
 
+.dashboard .research {
+  width: 100%;
+}
+
+.dashboard .research .line-chart {
+  width: 100%;
+  height: 440px;
+}
+
+.dashboard .research .line-chart button {
+  border: none;
+}
+
+.dashboard .research .line-chart .button-1 {
+  background-color: #2d9ab9;
+  color: white;
+}
+
+.dashboard .research .last-year {
+  height: 110px;
+}
+
+.dashboard .research .lifetime {
+  height: 130px;
+}
+
+.dashboard .research .rent-house {
+  width: 100%;
+  height: 620px;
+  background-color: white;
+}
+
+.dashboard .research .rent-house .title {
+  height: 70px;
+}
+
+.dashboard .research .rent-house img {
+  height: 250px;
+  object-fit: cover;
+}
+
+.dashboard .research .task {
+  height: 620px;
+  background-color: white;
+}
+
+.dashboard .research .task .title {
+  height: 70px;
+}
+
+.dashboard .research .rent-house .price {
+  height: 100px;
+  background-color: #f9b654;
+}
+
+.dashboard .research .rent-house .price .circle {
+  width: 68px;
+  height: 68px;
+  background-color: #e7583f;
+}
+
+.dashboard .research .rent-house .desc {
+  height: 70px;
+  border-bottom: 1px solid rgb(202, 197, 197);
+}
+
+.dashboard .research .rent-house .button button {
+  width: 140px;
+  height: 40px;
+  color: white;
+}
+
+.dashboard .research .forecast-weather {
+  width: 100%;
+  height: 500px;
+  background-image: url("./../img/jogja.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.dashboard .research .forecast-weather::before {
+  content: "";
+  width: 335px;
+  height: 500px;
+  background-color: black;
+  position: absolute;
+  opacity: 0.3;
+}
+
+.dashboard .research .forecast-weather .cloud i {
+  font-size: 120px;
+}
+
+.dashboard .research .forecast-weather .cloud div h1 {
+  font-size: 80px;
+}
+
+.dashboard .research .forecast-weather .cloud div h1::after {
+  content: "°";
+}
+
+.dashboard .research .forecast-weather .content .box {
+  width: 90px;
+  height: 180px;
+}
+
+.dashboard .research .media-social {
+  height: 300px;
+}
+
+.dashboard .research .media-social .box {
+  width: 100%;
+  height: 150px;
+  margin-bottom: 30px;
+  padding: 30px 0px;
+}
+
+.dashboard .research .friend-request {
+  height: 300px;
+}
+
+.dashboard .research .friend-request .box {
+  height: 90px;
+  width: 100%;
+}
+
+.dashboard .research .friend-request .box img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+}
+
+.dashboard .research .friend-request .checklist {
+  height: 40px;
+  width: 50px;
+}
+
+.dashboard .status {
+  width: 100%;
+}
+
+.dashboard .status .box-1 {
+  width: 100%;
+  height: 230px;
+}
+.dashboard .status .box-1 .box-content-1 {
+  height: 75%;
+  background-color: black;
+  background-image: url("./../img/sunrise.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.dashboard .status .box-1 .box-content-1 img,
+.dashboard .status .box-2 img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+}
+.dashboard .status .box-1 .box-content-1 h5 {
+  margin-top: 90px;
+}
+
+.dashboard .status .box-2 {
+  width: 100%;
+  height: 270px;
+}
+
+.dashboard .status .server-status {
+  height: 248px;
+}
+
+.dashboard .status .server-status img{
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.dashboard .status .description{
+  height: 295px;
+}
