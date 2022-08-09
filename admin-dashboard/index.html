@@ -6,855 +6,1168 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/bootstrap.min.css" />
     <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./fontawesome-6/css/all.css" />
-    <title>Document</title>
+    <!-- <link rel="stylesheet" href="./fontawesome-6/css/all.css" /> -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"> -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+      integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
+      crossorigin="anonymous"
+    />
+    <link rel="icon" href="./img/logo2.png" type="image/x-icon" />
+    <title>Sentir UI Kits</title>
   </head>
   <body>
-    <div class="main-app d-flex">
-      <!-- Sidebar -->
-      <div class="sidebar">
-        <div
-          class="logo py-3 bg-black d-flex align-items-center justify-content-center"
-        >
-          <div class="image-box">
-            <img src="./img/logo2.png" alt="logo-sentr-ui" />
-          </div>
-          <span class="text-uppercase text-light fw-bold fs-4 mx-2"
-            >sentir</span
-          >
-          <span class="text-uppercase text-light fs-4"> ui kits</span>
-        </div>
-
-        <div class="main-menu bg-dark h-100">
-          <div class="menu-item">
-            <div class="px-3 w-100 d-flex text-light align-items-center">
-              <div class="dashboard-title">
-                <i class="fa-solid fa-gauge"></i>
-                <span>Dashboard</span>
-              </div>
-            </div>
-          </div>
-          <div class="menu-item">
+    <div class="main-app">
+      <div class="row gx-0">
+        
+        <!-- Sidebar -->
+        <div class="col-md-3">
+          <div class="sidebar">
             <div
-              class="px-3 w-100 d-flex text-light align-items-center justify-content-between"
+              class="logo py-3 bg-black d-flex align-items-center justify-content-center"
             >
-              <div class="title">
-                <i class="fa-solid fa-tv"></i>
-                <span>Layout Template</span>
-              </div>
-              <div>
-                <span class="badge bg-warning text-dark">5</span>
-                <i class="arrow fa-solid fa-angle-right m-0"></i>
-              </div>
-            </div>
-          </div>
-          <div class="menu-item">
-            <div
-              class="px-3 w-100 d-flex text-light align-items-center justify-content-between"
-            >
-              <div class="title">
-                <i class="fa-solid fa-flask" style="margin-right: 25px"></i>
-                <span>Widget Ui Kits</span>
-              </div>
-              <div>
-                <i class="arrow fa-solid fa-angle-right m-0"></i>
-              </div>
-            </div>
-          </div>
-          <div class="menu-item">
-            <div
-              class="px-3 w-100 d-flex text-light align-items-center justify-content-between"
-            >
-              <div class="title">
-                <i class="fa-solid fa-folder" style="margin-right: 23px"></i>
-                <span>Layout Template</span>
-              </div>
-              <div>
-                <span class="badge bg-primary text-light">358</span>
-                <i class="arrow fa-solid fa-angle-right m-0"></i>
-              </div>
-            </div>
-          </div>
-          <div class="menu-item">
-            <div
-              class="px-3 w-100 d-flex text-light align-items-center justify-content-between"
-            >
-              <div class="title">
-                <i
-                  class="fa-solid fa-folder-open"
-                  style="margin-right: 21px"
-                ></i>
-                <span>More Elements</span>
-              </div>
-              <div>
-                <i class="arrow fa-solid fa-angle-right m-0"></i>
-              </div>
-            </div>
-          </div>
-          <div class="menu-item">
-            <div
-              class="px-3 w-100 d-flex text-light align-items-center justify-content-between"
-            >
-              <div class="title">
-                <i class="fa-solid fa-table" style="margin-right: 23px"></i>
-                <span>Tables</span>
-              </div>
-              <div>
-                <i class="arrow fa-solid fa-angle-right m-0"></i>
-              </div>
-            </div>
-          </div>
-          <div class="menu-item">
-            <div
-              class="px-3 w-100 d-flex text-light align-items-center justify-content-between"
-            >
-              <div class="title">
-                <i
-                  class="fa-solid fa-chart-column"
-                  style="margin-right: 23px"
-                ></i>
-                <span>Chart or Graph</span>
-              </div>
-              <div>
-                <i class="arrow fa-solid fa-angle-right m-0"></i>
-              </div>
-            </div>
-          </div>
-
-          <div class="px-3 my-4">
-            <span class="text-uppercase text-light">extra designs</span>
-          </div>
-
-          <div class="menu-item">
-            <div
-              class="px-3 w-100 d-flex text-light align-items-center justify-content-between"
-            >
-              <div class="title">
-                <i class="fa-solid fa-envelope" style="margin-right: 23px"></i>
-                <span>Mail apps</span>
-              </div>
-              <div>
-                <span class="badge bg-danger text-light">HOT</span>
-                <i class="arrow fa-solid fa-angle-right m-0"></i>
-              </div>
-            </div>
-          </div>
-          <div class="menu-item">
-            <div
-              class="px-3 w-100 d-flex text-light align-items-center justify-content-between"
-            >
-              <div class="title">
-                <i
-                  class="fa-solid fa-cart-shopping"
-                  style="margin-right: 21px"
-                ></i>
-                <span>Store apps</span>
-              </div>
-              <div>
-                <i class="arrow fa-solid fa-angle-right m-0"></i>
-              </div>
-            </div>
-          </div>
-          <div class="menu-item">
-            <div
-              class="px-3 w-100 d-flex text-light align-items-center justify-content-between"
-            >
-              <div class="title">
-                <i
-                  class="fa-solid fa-house-chimney"
-                  style="margin-right: 20px"
-                ></i>
-                <span>Real estate apps</span>
-              </div>
-              <div>
-                <i class="arrow fa-solid fa-angle-right m-0"></i>
-              </div>
-            </div>
-          </div>
-          <div class="menu-item">
-            <div
-              class="px-3 w-100 d-flex text-light align-items-center justify-content-between"
-            >
-              <div class="title">
-                <i class="fa-solid fa-comment" style="margin-right: 22px"></i>
-                <span>Mail apps</span>
-              </div>
-              <div>
-                <span class="badge bg-success text-light">TOP</span>
-                <i class="arrow fa-solid fa-angle-right m-0"></i>
-              </div>
-            </div>
-          </div>
-          <div class="menu-item">
-            <div
-              class="px-3 w-100 d-flex text-light align-items-center justify-content-between"
-            >
-              <div class="title">
-                <i class="fa-solid fa-users" style="margin-right: 18px"></i>
-                <span>Social apps</span>
-              </div>
-              <div>
-                <i class="arrow fa-solid fa-angle-right m-0"></i>
-              </div>
-            </div>
-          </div>
-          <div class="menu-item">
-            <div
-              class="px-3 w-100 d-flex text-light align-items-center justify-content-between"
-            >
-              <div class="title">
-                <i class="fa-solid fa-heart" style="margin-right: 21px"></i>
-                <span>Example pages</span>
-              </div>
-              <div>
-                <i class="arrow fa-solid fa-angle-right m-0"></i>
-              </div>
-            </div>
-          </div>
-
-          <div class="px-3 my-4">
-            <span class="text-uppercase text-light">system settings</span>
-          </div>
-
-          <div class="menu-item">
-            <div
-              class="px-3 w-100 d-flex text-light align-items-center justify-content-between"
-            >
-              <div class="title">
-                <span>Alert me when system down</span>
-              </div>
-              <div>
-                <label class="switch">
-                  <input type="checkbox" />
-                  <span class="slider"></span>
-                </label>
-              </div>
-            </div>
-          </div>
-          <div class="menu-item">
-            <div
-              class="px-3 w-100 d-flex text-light align-items-center justify-content-between"
-            >
-              <div class="title">
-                <span>Automatic update</span>
-              </div>
-              <div>
-                <label class="switch">
-                  <input type="checkbox" />
-                  <span class="slider"></span>
-                </label>
-              </div>
-            </div>
-          </div>
-          <div class="menu-item">
-            <div
-              class="px-3 w-100 d-flex text-light align-items-center justify-content-between"
-            >
-              <div class="title">
-                <span>Daily task report</span>
-              </div>
-              <div>
-                <label class="switch">
-                  <input type="checkbox" />
-                  <span class="slider"></span>
-                </label>
-              </div>
-            </div>
-          </div>
-          <div class="menu-item">
-            <div
-              class="px-3 w-100 d-flex text-light align-items-center justify-content-between"
-            >
-              <div class="title">
-                <span>Remember this computer</span>
-              </div>
-              <div>
-                <label class="switch">
-                  <input type="checkbox" />
-                  <span class="slider"></span>
-                </label>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="main-content">
-        <header class="bg-light">
-          <div class="container px-3">
-            <nav class="d-flex justify-content-between align-items-center">
-              <div
-                class="w-50 d-flex justify-content-between align-items-center"
+              <img src="./img/logo2.png" alt="logo-sentr-ui" />
+              <span class="text-uppercase text-light fw-bold fs-4 mx-2"
+                >sentir</span
               >
-                <i class="fa-solid fa-arrow-left-long fs-5"></i>
-                <input
-                  type="text"
-                  class="input-search form-control w-50"
-                  placeholder="Search"
-                />
-                <div class="icon-notification d-flex justify-content-between">
-                  <i class="fa-solid fa-bell position-relative">
-                    <span
-                      class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
-                    >
-                      7
-                      <span class="visually-hidden">unread messages</span>
-                    </span>
-                  </i>
-                  <i class="fa-solid fa-briefcase position-relative">
-                    <span
-                      class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning"
-                    >
-                      3
-                      <span class="visually-hidden">unread messages</span>
-                    </span>
-                  </i>
-                  <i class="fa-solid fa-envelope position-relative">
-                    <span
-                      class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success"
-                    >
-                      9
-                      <span class="visually-hidden">unread messages</span>
-                    </span>
-                  </i>
-                  <i class="fa-solid fa-users position-relative">
-                    <span
-                      class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-info"
-                    >
-                      2
-                      <span class="visually-hidden">unread messages</span>
-                    </span>
-                  </i>
+              <span class="text-uppercase text-light fs-4"> ui kits</span>
+            </div>
+    
+            <div class="main-menu bg-dark">
+              <div class="menu-item">
+                <div class="px-3 w-100 d-flex text-light align-items-center">
+                  <div class="dashboard-title">
+                    <i class="fas fa-tachometer-alt"></i>
+                    <span>Dashboard</span>
+                  </div>
                 </div>
               </div>
-              <div class="w-50 d-flex justify-content-end">
+              <div class="menu-item">
                 <div
-                  class="w-40 d-flex align-items-center justify-content-between"
+                  class="px-3 w-100 d-flex text-light align-items-center justify-content-between"
                 >
-                  <div class="image-box rounded-circle bg-danger">
-                    <img
-                      src="./img/people2.jpeg"
-                      alt=""
-                      class="w-100 img-fluid rounded-circle"
-                    />
+                  <div class="title">
+                    <i class="fas fa-desktop"></i>
+                    <span>Layout Template</span>
                   </div>
-                  <span>Hi, Paris Hawker</span>
-                  <i class="fa-solid fa-bullhorn"></i>
+                  <div>
+                    <span class="badge bg-warning text-dark">5</span>
+                    <i class="fas fa-angle-right"></i>
+                  </div>
                 </div>
               </div>
-            </nav>
+              <div class="menu-item">
+                <div
+                  class="px-3 w-100 d-flex text-light align-items-center justify-content-between"
+                >
+                  <div class="title">
+                    <i class="fas fa-flask" style="margin-right: 25px"></i>
+                    <span>Widget Ui Kits</span>
+                  </div>
+                  <div>
+                    <i class="fas fa-angle-right"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div
+                  class="px-3 w-100 d-flex text-light align-items-center justify-content-between"
+                >
+                  <div class="title">
+                    <i class="fas fa-folder" style="margin-right: 23px"></i>
+                    <span>Layout Template</span>
+                  </div>
+                  <div>
+                    <span class="badge bg-primary text-light">358</span>
+                    <i class="arrow fas fa-angle-right m-0"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div
+                  class="px-3 w-100 d-flex text-light align-items-center justify-content-between"
+                >
+                  <div class="title">
+                    <i class="fas fa-folder-open" style="margin-right: 21px"></i>
+                    <span>More Elements</span>
+                  </div>
+                  <div>
+                    <i class="arrow fas fa-angle-right m-0"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div
+                  class="px-3 w-100 d-flex text-light align-items-center justify-content-between"
+                >
+                  <div class="title">
+                    <i class="fas fa-table" style="margin-right: 23px"></i>
+                    <span>Tables</span>
+                  </div>
+                  <div>
+                    <i class="arrow fas fa-angle-right m-0"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div
+                  class="px-3 w-100 d-flex text-light align-items-center justify-content-between"
+                >
+                  <div class="title">
+                    <i class="fas fa-chart-bar" style="margin-right: 23px"></i>
+                    <span>Chart or Graph</span>
+                  </div>
+                  <div>
+                    <i class="arrow fas fa-angle-right m-0"></i>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="px-3 my-4">
+                <span class="text-uppercase text-light">extra designs</span>
+              </div>
+    
+              <div class="menu-item">
+                <div
+                  class="px-3 w-100 d-flex text-light align-items-center justify-content-between"
+                >
+                  <div class="title">
+                    <i class="fas fa-envelope" style="margin-right: 23px"></i>
+                    <span>Mail apps</span>
+                  </div>
+                  <div>
+                    <span class="badge bg-danger text-light">HOT</span>
+                    <i class="arrow fas fa-angle-right m-0"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div
+                  class="px-3 w-100 d-flex text-light align-items-center justify-content-between"
+                >
+                  <div class="title">
+                    <i class="fas fa-shopping-cart" style="margin-right: 21px"></i>
+                    <span>Store apps</span>
+                  </div>
+                  <div>
+                    <i class="arrow fas fa-angle-right m-0"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div
+                  class="px-3 w-100 d-flex text-light align-items-center justify-content-between"
+                >
+                  <div class="title">
+                    <i class="fas fa-home" style="margin-right: 21px"></i>
+                    <span>Real estate apps</span>
+                  </div>
+                  <div>
+                    <i class="arrow fas fa-angle-right m-0"></i>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="menu-item">
+                <div
+                  class="px-3 w-100 d-flex text-light align-items-center justify-content-between"
+                >
+                  <div class="title">
+                    <i class="fas fa-comment" style="margin-right: 22px"></i>
+                    <span>Mail apps</span>
+                  </div>
+                  <div>
+                    <span class="badge bg-success text-light">TOP</span>
+                    <i class="arrow fas fa-angle-right m-0"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div
+                  class="px-3 w-100 d-flex text-light align-items-center justify-content-between"
+                >
+                  <div class="title">
+                    <i class="fas fa-users" style="margin-right: 18px"></i>
+                    <span>Social apps</span>
+                  </div>
+                  <div>
+                    <i class="arrow fas fa-angle-right m-0"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div
+                  class="px-3 w-100 d-flex text-light align-items-center justify-content-between"
+                >
+                  <div class="title">
+                    <i class="fas fa-heart" style="margin-right: 21px"></i>
+                    <span>Example pages</span>
+                  </div>
+                  <div>
+                    <i class="arrow fas fa-angle-right m-0"></i>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="px-3 my-4">
+                <span class="text-uppercase text-light">system settings</span>
+              </div>
+    
+              <div class="menu-item">
+                <div
+                  class="px-3 w-100 d-flex text-light align-items-center justify-content-between"
+                >
+                  <div class="title">
+                    <span>Alert me when system down</span>
+                  </div>
+                  <div>
+                    <label class="switch">
+                      <input type="checkbox" />
+                      <span class="slider"></span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div
+                  class="px-3 w-100 d-flex text-light align-items-center justify-content-between"
+                >
+                  <div class="title">
+                    <span>Automatic update</span>
+                  </div>
+                  <div>
+                    <label class="switch">
+                      <input type="checkbox" />
+                      <span class="slider"></span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div
+                  class="px-3 w-100 d-flex text-light align-items-center justify-content-between"
+                >
+                  <div class="title">
+                    <span>Daily task report</span>
+                  </div>
+                  <div>
+                    <label class="switch">
+                      <input type="checkbox" />
+                      <span class="slider"></span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div
+                  class="px-3 w-100 d-flex text-light align-items-center justify-content-between"
+                >
+                  <div class="title">
+                    <span>Remember this computer</span>
+                  </div>
+                  <div>
+                    <label class="switch">
+                      <input type="checkbox" />
+                      <span class="slider"></span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-        </header>
-
-        <section class="dashboard">
-          <div class="container px-3">
-            <div class="mb-3">
-              <span class="text-uppercase fs-2">dashboard </span>
-              <span class="text-capitalize text-muted">sub heading here</span>
-            </div>
-
-            <div
-              class="border-4 border-start border-warning px-4 py-3 mb-4 w-100 bg-white"
-            >
-              <span class="fw-bold">Welcome!</span>
-              <p class="m-0 pt-2">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                <span class="text-warning"> Iusto eius repellendus</span>
-                quibusdam similique? Veniam, recusandae culpa eveniet eos,
-                aliquam sapiente enim impedit minima alias consequuntur. &copy;
-              </p>
-            </div>
-
-            <div class="today row mb-4">
-              <div class="col-md">
-                <div class="box text-light">
-                  <img
-                    src="./img/bubble.png"
-                    alt="bubble.png"
-                    class="position-absolute"
-                  />
+        </div>
+        
+        <!-- Main Content -->
+        <div class="col-md-9">
+          <div class="main-content col-md-10">
+            <header class="bg-light">
+              <div class="container px-3">
+                <nav class="d-flex justify-content-between align-items-center py-3">
                   <div
-                    class="background background-primary position-absolute"
-                  ></div>
-                  <div
-                    class="content position-relative py-4 d-flex flex-column text-center"
+                    class="w-50 d-flex justify-content-between align-items-center"
                   >
-                    <span class="text-uppercase">today sales</span>
-                    <span class="mt-4 fs-1">12,254</span>
-                    <div class="line mt-3">
-                      <div class="left background-primary"></div>
-                      <div class="right"></div>
+                    <i class="fas fa-long-arrow-alt-left fs-5"></i>
+                    <input
+                      type="text"
+                      class="input-search form-control w-100 mx-4"
+                      placeholder="Search"
+                    />
+                    <div class="w-100 icon-notification d-flex justify-content-between mx-2">
+                      <i class="fas fa-bell position-relative">
+                        <span
+                          class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                        >
+                          7
+                          <span class="visually-hidden">unread messages</span>
+                        </span>
+                      </i>
+                      <i class="fas fa-briefcase position-relative">
+                        <span
+                          class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning"
+                        >
+                          3
+                          <span class="visually-hidden">unread messages</span>
+                        </span>
+                      </i>
+                      <i class="fas fa-envelope position-relative">
+                        <span
+                          class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success"
+                        >
+                          9
+                          <span class="visually-hidden">unread messages</span>
+                        </span>
+                      </i>
+                      <i class="fas fa-users position-relative">
+                        <span
+                          class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-info"
+                        >
+                          2
+                          <span class="visually-hidden">unread messages</span>
+                        </span>
+                      </i>
                     </div>
-                    <span class="mt-4">Better then yesterday (7,5%)</span>
                   </div>
-                </div>
-              </div>
-              <div class="col-md">
-                <div class="box text-light">
-                  <img
-                    src="./img/bubble.png"
-                    alt="bubble.png"
-                    class="position-absolute"
-                  />
-                  <div
-                    class="background background-secondary position-absolute"
-                  ></div>
-                  <div
-                    class="content position-relative py-4 d-flex flex-column text-center"
-                  >
-                    <span class="text-uppercase">today visitors</span>
-                    <span class="mt-4 fs-1">521</span>
-                    <div class="line mt-3">
-                      <div class="left background-secondary"></div>
-                      <div class="right"></div>
+                  <div class="w-50 profile d-flex justify-content-end">
+                    <div
+                      class="body d-flex align-items-center"
+                    >
+                      <img src="./img/people2.jpeg" alt="" class="rounded-circle" />
+                      <span class="mx-3">Hi, Paris Hawker</span>
+                      <i class="fas fa-bullhorn"></i>
                     </div>
-                    <span class="mt-4">Better then yesterday (10,5%)</span>
                   </div>
-                </div>
+                </nav>
               </div>
-              <div class="col-md">
-                <div class="box text-light">
-                  <img
-                    src="./img/bubble.png"
-                    alt="bubble.png"
-                    class="position-absolute"
-                  />
-                  <div
-                    class="background background-third position-absolute"
-                  ></div>
-                  <div
-                    class="content position-relative py-4 d-flex flex-column text-center"
-                  >
-                    <span class="text-uppercase">today feeback</span>
-                    <span class="mt-4 fs-1">124</span>
-                    <div class="line mt-3">
-                      <div class="left background-third"></div>
-                      <div class="right"></div>
-                    </div>
-                    <span class="mt-4">less then yesterday (7,5%)</span>
-                  </div>
+            </header>
+    
+            <section class="dashboard">
+              <div class="container px-3">
+                <div class="mb-3">
+                  <span class="text-uppercase fs-2">dashboard </span>
+                  <span class="text-capitalize text-muted">sub heading here</span>
                 </div>
-              </div>
-              <div class="col-md">
-                <div class="box text-light">
-                  <img
-                    src="./img/bubble.png"
-                    alt="bubble.png"
-                    class="position-absolute"
-                  />
-                  <div
-                    class="background background-fourth position-absolute"
-                  ></div>
-                  <div
-                    class="content position-relative py-4 d-flex flex-column text-center"
-                  >
-                    <span class="text-uppercase">today landings</span>
-                    <span class="mt-4 fs-1">10,241</span>
-                    <div class="line mt-3">
-                      <div class="left background-fourth"></div>
-                      <div class="right"></div>
-                    </div>
-                    <span class="mt-4">Better then yesterday (12,5%)</span>
-                  </div>
+    
+                <div
+                  class="border-4 border-start border-warning px-4 py-3 mb-4 w-100 bg-white"
+                >
+                  <span class="fw-bold">Welcome!</span>
+                  <p class="m-0 pt-2">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    <span class="text-warning"> Iusto eius repellendus</span>
+                    quibusdam similique? Veniam, recusandae culpa eveniet eos,
+                    aliquam sapiente enim impedit minima alias consequuntur. &copy;
+                  </p>
                 </div>
-              </div>
-            </div>
-
-            <div class="research">
-              <div class="row">
-                <div class="col-md-8 mb-5">
-                  <div class="line-chart background-success p-2">
-                    <div class="d-flex justify-content-between text-light mb-3">
-                      <span class="text-uppercase"
-                        >earnings and sales chart</span
-                      >
-                      <div>
-                        <button class="button-1">Lifetime</button>
-                        <button class="button-2 bg-transparent text-light">
-                          This year
-                        </button>
+    
+                <div class="today row mb-4">
+                  <div class="col-md-3 mb-3">
+                    <div class="box text-light">
+                      <div class="background-primary-thin">
+                        <div class="content py-4 d-flex flex-column text-center">
+                          <span class="text-uppercase">today sales</span>
+                          <span class="mt-4 fs-1">12,254</span>
+                          <div class="line mt-3">
+                            <div class="left background-primary"></div>
+                            <div class="right"></div>
+                          </div>
+                          <span class="mt-4">Better then yesterday (7,5%)</span>
+                        </div>
                       </div>
                     </div>
-                    <img
-                      src="./img/line-diagram.png"
-                      alt=""
-                      class="w-100 img-fluid"
-                    />
                   </div>
-                  <div
-                    class="last-year w-100 bg-dark d-flex text-light justify-content-between p-3"
-                  >
-                    <div>
-                      <h3 class="text-uppercase">last year</h3>
-                      <p>Today May 20 2014</p>
-                    </div>
-                    <div class="text-end">
-                      <h3 class="text-uppercase text-primary-2">+805.00</h3>
-                      <p>-10,1(11%)</p>
+                  <div class="col-md-3 mb-3">
+                    <div class="box text-light">
+                      <div class="background-secondary-thin">
+                        <div class="content py-4 d-flex flex-column text-center">
+                          <span class="text-uppercase">today sales</span>
+                          <span class="mt-4 fs-1">12,254</span>
+                          <div class="line mt-3">
+                            <div class="left background-secondary"></div>
+                            <div class="right"></div>
+                          </div>
+                          <span class="mt-4">Better then yesterday (7,5%)</span>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                  <div
-                    class="lifetime bg-light d-flex justify-content-between p-3 mb-5"
-                  >
-                    <div>
-                      <h1>50,024K</h1>
-                      <p>Lifetime earnings</p>
+                  <div class="col-md-3 mb-3">
+                    <div class="box text-light">
+                      <div class="background-third-thin">
+                        <div class="content py-4 d-flex flex-column text-center">
+                          <span class="text-uppercase">today sales</span>
+                          <span class="mt-4 fs-1">12,254</span>
+                          <div class="line mt-3">
+                            <div class="left background-third"></div>
+                            <div class="right"></div>
+                          </div>
+                          <span class="mt-4">Better then yesterday (7,5%)</span>
+                        </div>
+                      </div>
                     </div>
-                    <img src="./img/bar-chart.png" alt="bar-chart" class="" />
                   </div>
-
+                  <div class="col-md-3">
+                    <div class="box text-light">
+                      <div class="background-warning-thin">
+                        <div class="content py-4 d-flex flex-column text-center">
+                          <span class="text-uppercase">today sales</span>
+                          <span class="mt-4 fs-1">12,254</span>
+                          <div class="line mt-3">
+                            <div class="left background-warning"></div>
+                            <div class="right"></div>
+                          </div>
+                          <span class="mt-4">Better then yesterday (7,5%)</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="research">
                   <div class="row">
-                    <div class="col-md-6">
-                      <div class="rent-house">
-                        <div class="title d-flex text-light background-third">
-                          <span class="text-uppercase m-auto"
-                            >special offers</span
+                    <div class="col-md-8 mb-5">
+                      <div class="line-chart background-success p-2">
+                        <div class="d-flex justify-content-between align-items-center text-light mb-3">
+                          <span class="text-uppercase"
+                            >earnings and sales chart</span
                           >
+                          <div>
+                            <button class="button-1">Lifetime</button>
+                            <button class="button-2 bg-transparent text-light p-0">
+                              This year
+                            </button>
+                          </div>
                         </div>
                         <img
-                          src="./img/house.jpg"
-                          alt="house"
+                          src="./img/line-diagram.png"
+                          alt=""
                           class="w-100 img-fluid"
                         />
-                        <div
-                          class="price py-3 align-items-center px-3 d-flex text-light"
-                        >
-                          <div class="rounded-circle d-flex fs-5 circle">
-                            <span class="text-uppercase m-auto">rent</span>
+                      </div>
+                      <div
+                        class="last-year w-100 bg-dark d-flex text-light justify-content-between p-3"
+                      >
+                        <div>
+                          <h3 class="text-uppercase">last year</h3>
+                          <p>Today May 20 2014</p>
+                        </div>
+                        <div class="text-end">
+                          <h3 class="text-uppercase text-primary-2">+805.00</h3>
+                          <p>-10,1(11%)</p>
+                        </div>
+                      </div>
+                      <div
+                        class="lifetime bg-light d-flex justify-content-between p-3 mb-5"
+                      >
+                        <div>
+                          <h1>50,024K</h1>
+                          <p>Lifetime earnings</p>
+                        </div>
+                        <img
+                          src="./img/bar-chart.png"
+                          alt="bar-chart"
+                          class="w-25"
+                        />
+                      </div>
+    
+                      <div class="row">
+                        <div class="col-md-6 mb-3">
+                          <div class="rent-house">
+                            <div
+                              class="title d-flex text-light background-third py-4"
+                            >
+                              <span class="text-uppercase m-auto"
+                                >special offers</span
+                              >
+                            </div>
+                            <img
+                              src="./img/house.jpg"
+                              alt="house"
+                              class="w-100 img-fluid"
+                            />
+                            <div
+                              class="price py-3 align-items-center px-3 d-flex text-light"
+                            >
+                              <div class="rounded-circle d-flex fs-5 circle">
+                                <span class="text-uppercase m-auto">rent</span>
+                              </div>
+                              <div class="mx-4">
+                                <h1 class="m-0">$750/Wk</h1>
+                                <p>Road: $3.000</p>
+                              </div>
+                            </div>
+                            <div
+                              class="desc bg-white mx-3 text-center py-4 mb-4 text-secondary opacity-75"
+                            >
+                              <span class="mx-3"
+                                ><i class="fas fa-bed mx-2"></i>2 Bedroom</span
+                              >
+                              <span class="mx-3"
+                                ><i class="fas fa-user mx-2"></i>2 Bathroom</span
+                              >
+                            </div>
+                            <div class="text-center mb-4 text-warning">
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                            </div>
+                            <div
+                              class="button px-3 d-flex text-light"
+                            >
+                              <button class="background-primary">Favorite</button>
+                              <button class="background-third mx-2">Apply Rent</button>
+                            </div>
                           </div>
-                          <div class="mx-4">
-                            <h1 class="m-0">$750/Wk</h1>
-                            <p>Road: $3.000</p>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="task bg-white">
+                            <div
+                              class="title background-primary px-3 text-light d-flex align-items-center py-4"
+                            >
+                              <i class="fas fa-calendar-check"></i>
+                              <p class="m-0 px-2">Your current tasks</p>
+                            </div>
+                            <div class="content py-3 px-3">
+                              <div class="form-check py-2 border-1 border-bottom">
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  value=""
+                                  id="flexCheckDefault"
+                                />
+                                <label
+                                  class="form-check-label"
+                                  for="flexCheckDefault"
+                                >
+                                  Eating woods
+                                </label>
+                              </div>
+                              <div class="form-check py-2 border-1 border-bottom">
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  value=""
+                                  id="flexCheckDefault"
+                                />
+                                <label
+                                  class="form-check-label"
+                                  for="flexCheckDefault"
+                                >
+                                  washing my pots
+                                </label>
+                              </div>
+                              <div class="form-check py-2 border-1 border-bottom">
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  value=""
+                                  id="flexCheckDefault"
+                                />
+                                <label
+                                  class="form-check-label"
+                                  for="flexCheckDefault"
+                                >
+                                  Uploding selfie photo
+                                </label>
+                              </div>
+                              <div class="form-check py-2 border-1 border-bottom">
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  value=""
+                                  id="flexCheckDefault"
+                                />
+                                <label
+                                  class="form-check-label"
+                                  for="flexCheckDefault"
+                                >
+                                  Downloading movie
+                                </label>
+                              </div>
+                              <div class="form-check py-2 border-1 border-bottom">
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  value=""
+                                  id="flexCheckDefault"
+                                />
+                                <label
+                                  class="form-check-label"
+                                  for="flexCheckDefault"
+                                >
+                                  Updating my alay status
+                                </label>
+                              </div>
+                              <div class="form-check py-2 border-1 border-bottom">
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  value=""
+                                  id="flexCheckDefault"
+                                />
+                                <label
+                                  class="form-check-label"
+                                  for="flexCheckDefault"
+                                >
+                                  Healing
+                                </label>
+                              </div>
+                              <div class="form-check py-2 border-1 border-bottom">
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  value=""
+                                  id="flexCheckDefault"
+                                />
+                                <label
+                                  class="form-check-label"
+                                  for="flexCheckDefault"
+                                >
+                                  Creating web template
+                                </label>
+                              </div>
+                              <div class="form-check py-2 border-1 border-bottom">
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  value=""
+                                  id="flexCheckDefault"
+                                />
+                                <label
+                                  class="form-check-label"
+                                  for="flexCheckDefault"
+                                >
+                                  Walking to Malioboro
+                                </label>
+                              </div>
+                              <div class="form-check py-2 border-1 border-bottom">
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  value=""
+                                  id="flexCheckDefault"
+                                />
+                                <label
+                                  class="form-check-label"
+                                  for="flexCheckDefault"
+                                >
+                                  Listening music favorite
+                                </label>
+                              </div>
+                              <div class="form-check py-2 border-1 border-bottom">
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  value=""
+                                  id="flexCheckDefault"
+                                />
+                                <label
+                                  class="form-check-label"
+                                  for="flexCheckDefault"
+                                >
+                                  Being an elite author
+                                </label>
+                              </div>
+                              <div
+                                class="form-check py-2 border-1 border-bottom mb-3"
+                              >
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  value=""
+                                  id="flexCheckDefault"
+                                />
+                                <label
+                                  class="form-check-label"
+                                  for="flexCheckDefault"
+                                >
+                                  Uploding selfie photo
+                                </label>
+                              </div>
+                              <button
+                                class="w-100 py-2 background-third text-light"
+                              >
+                                See all tasks
+                              </button>
+                            </div>
                           </div>
-                        </div>
-                        <div
-                          class="desc bg-white mx-3 text-center py-4 mb-4 text-secondary opacity-75"
-                        >
-                          <span class="mx-3"
-                            ><i class="fa-solid fa-bed mx-2"></i>2 Bedroom</span
-                          >
-                          <span class="mx-3"
-                            ><i class="fa-solid fa-user mx-2"></i>2
-                            Bathroom</span
-                          >
-                        </div>
-                        <div class="text-center mb-4 text-warning">
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                        </div>
-                        <div
-                          class="button px-3 d-flex justify-content-between text-light"
-                        >
-                          <button class="background-primary">Favorite</button>
-                          <button class="background-third">Apply Rent</button>
                         </div>
                       </div>
                     </div>
-                    <div class="col-md-6">
-                      <div class="task">
-                        <div
-                          class="title background-primary px-3 text-light d-flex align-items-center"
-                        >
-                          <i class="fa-solid fa-calendar-check"></i>
-                          <p class="m-0 px-2">Your current tasks</p>
-                        </div>
-                        <div class="content py-2 px-3">
-                          <div class="form-check py-2 border-1 border-bottom">
-                            <input
-                              class="form-check-input"
-                              type="checkbox"
-                              value=""
-                              id="flexCheckDefault"
-                            />
-                            <label
-                              class="form-check-label"
-                              for="flexCheckDefault"
-                            >
-                              Eating woods
-                            </label>
-                          </div>
-                          <div class="form-check py-2 border-1 border-bottom">
-                            <input
-                              class="form-check-input"
-                              type="checkbox"
-                              value=""
-                              id="flexCheckDefault"
-                            />
-                            <label
-                              class="form-check-label"
-                              for="flexCheckDefault"
-                            >
-                              washing my pots
-                            </label>
-                          </div>
-                          <div class="form-check py-2 border-1 border-bottom">
-                            <input
-                              class="form-check-input"
-                              type="checkbox"
-                              value=""
-                              id="flexCheckDefault"
-                            />
-                            <label
-                              class="form-check-label"
-                              for="flexCheckDefault"
-                            >
-                              Uploding selfie photo
-                            </label>
-                          </div>
-                          <div class="form-check py-2 border-1 border-bottom">
-                            <input
-                              class="form-check-input"
-                              type="checkbox"
-                              value=""
-                              id="flexCheckDefault"
-                            />
-                            <label
-                              class="form-check-label"
-                              for="flexCheckDefault"
-                            >
-                              Downloading movie
-                            </label>
-                          </div>
-                          <div class="form-check py-2 border-1 border-bottom">
-                            <input
-                              class="form-check-input"
-                              type="checkbox"
-                              value=""
-                              id="flexCheckDefault"
-                            />
-                            <label
-                              class="form-check-label"
-                              for="flexCheckDefault"
-                            >
-                              Updating my alay status
-                            </label>
-                          </div>
-                          <div class="form-check py-2 border-1 border-bottom">
-                            <input
-                              class="form-check-input"
-                              type="checkbox"
-                              value=""
-                              id="flexCheckDefault"
-                            />
-                            <label
-                              class="form-check-label"
-                              for="flexCheckDefault"
-                            >
-                              Healing
-                            </label>
-                          </div>
-                          <div class="form-check py-2 border-1 border-bottom">
-                            <input
-                              class="form-check-input"
-                              type="checkbox"
-                              value=""
-                              id="flexCheckDefault"
-                            />
-                            <label
-                              class="form-check-label"
-                              for="flexCheckDefault"
-                            >
-                              Creating web template
-                            </label>
-                          </div>
-                          <div class="form-check py-2 border-1 border-bottom">
-                            <input
-                              class="form-check-input"
-                              type="checkbox"
-                              value=""
-                              id="flexCheckDefault"
-                            />
-                            <label
-                              class="form-check-label"
-                              for="flexCheckDefault"
-                            >
-                              Walking to Malioboro
-                            </label>
-                          </div>
-                          <div class="form-check py-2 border-1 border-bottom">
-                            <input
-                              class="form-check-input"
-                              type="checkbox"
-                              value=""
-                              id="flexCheckDefault"
-                            />
-                            <label
-                              class="form-check-label"
-                              for="flexCheckDefault"
-                            >
-                              Listening music favorite
-                            </label>
-                          </div>
-                          <div class="form-check py-2 border-1 border-bottom">
-                            <input
-                              class="form-check-input"
-                              type="checkbox"
-                              value=""
-                              id="flexCheckDefault"
-                            />
-                            <label
-                              class="form-check-label"
-                              for="flexCheckDefault"
-                            >
-                              Being an elite author
-                            </label>
+    
+                    <div class="col-md-4">
+                      <div class="forecast-weather mb-4">
+                        <div class="content text-light position-relative p-4">
+                          <div class="text-center text-uppercase mb-5">
+                            <h5>yogyakarta,id</h5>
+                            <span>tonight</span>
                           </div>
                           <div
-                            class="form-check py-2 border-1 border-bottom mb-3"
+                            class="cloud d-flex justify-content-between align-items-center mb-5"
                           >
-                            <input
-                              class="form-check-input"
-                              type="checkbox"
-                              value=""
-                              id="flexCheckDefault"
-                            />
-                            <label
-                              class="form-check-label"
-                              for="flexCheckDefault"
-                            >
-                              Uploding selfie photo
-                            </label>
+                            <i class="fas fa-cloud-moon"></i>
+                            <div class="d-flex flex-column text-start">
+                              <h1 class="m-0">28</h1>
+                              <span class="m-0">Will rain at night</span>
+                            </div>
                           </div>
-                          <button
-                            class="w-100 py-2 background-third text-light"
+                          <div
+                            class="d-flex justify-content-between text-uppercase text-center px-3"
                           >
-                            See all tasks
+                            <div class="box d-flex flex-column pt-5">
+                              <span class="mb-4">sat</span>
+                              <i class="fas fa-moon fs-2 mb-4"></i>
+                              <p>27°</p>
+                            </div>
+                            <div class="box d-flex flex-column pt-5">
+                              <span class="mb-4">sun</span>
+                              <i class="fas fa-cloud fs-2 mb-4"></i>
+                              <p>26°</p>
+                            </div>
+                            <div class="box d-flex flex-column pt-5">
+                              <span class="mb-4">mon</span>
+                              <i class="fas fa-cloud-moon-rain fs-2 mb-4"></i>
+                              <p>25°</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="media-social text-light mb-5">
+                        <div class="row">
+                          <div class="col-md-6 mb-3">
+                            <div class="box text-center bg-facebook">
+                              <i class="fab fa-facebook fs-1 mb-4"></i>
+                              <p>10K likes</p>
+                            </div>
+                          </div>
+                          <div class="col-md-6 mb-3">
+                            <div class="box text-center bg-twitter">
+                              <i class="fab fa-twitter fs-1 mb-4"></i>
+                              <p>2K likes</p>
+                            </div>
+                          </div>
+                          <div class="col-md-6 mb-3">
+                            <div class="box text-center bg-basketball">
+                              <i class="fas fa-basketball-ball fs-1 mb-4"></i>
+                              <p>1K likes</p>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="box text-center bg-linkedin">
+                              <i class="fab fa-linkedin-in fs-1 mb-4"></i>
+                              <p>1K likes</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="friend-request">
+                        <div
+                          class="title d-flex text-secondary align-items-center text-uppercase mb-3"
+                        >
+                          <i class="fa fa-users" aria-hidden="true"></i>
+                          <p class="mx-2">Friend Requests</p>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-12">
+                            <div
+                              class="box background-primary pt-3 text-light pb-3 px-3 d-flex justify-content-between mb-4"
+                            >
+                              <div class="d-flex">
+                                <img
+                                  src="./img/people4.jpeg"
+                                  alt="people2"
+                                  class="rounded-circle img-fluid"
+                                />
+                                <div class="mx-2">
+                                  <span>Mya Woestel</span>
+                                  <p class="text-primary-2">@myawoestel</p>
+                                </div>
+                              </div>
+                              <div
+                                class="checklist d-flex background-primary-solid"
+                              >
+                                <i class="fas fa-check m-auto"></i>
+                              </div>
+                            </div>
+                            <div
+                              class="box bg-white pt-3 text-light pb-3 px-3 d-flex justify-content-between mb-4"
+                            >
+                              <div class="d-flex">
+                                <img
+                                  src="./img/people3.jpg"
+                                  alt="people2"
+                                  class="rounded-circle img-fluid"
+                                />
+                                <div class="mx-2">
+                                  <span class="text-dark">Elizabeth owens</span>
+                                  <p class="text-primary">@elizaebethowens</p>
+                                </div>
+                              </div>
+                              <div class="checklist d-flex background-success">
+                                <i class="fas fa-check m-auto"></i>
+                              </div>
+                            </div>
+                            <div
+                              class="box bg-white pt-3 text-light pb-3 px-3 d-flex justify-content-between mb-3"
+                            >
+                              <div class="d-flex">
+                                <img
+                                  src="./img/people1.jpeg"
+                                  alt="people2"
+                                  class="rounded-circle img-fluid"
+                                />
+                                <div class="mx-2">
+                                  <span class="text-dark">Herold Chavez</span>
+                                  <p class="text-primary">@heroldchavez</p>
+                                </div>
+                              </div>
+                              <div class="checklist d-flex background-success">
+                                <i class="fas fa-check m-auto"></i>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="status mb-4">
+                  <div class="row">
+                    <div class="col-md-4 mb-2">
+                      <div class="box-1 background-warning mb-4">
+                        <div class="box-content-1 px-3 py-3 text-light">
+                          <img
+                            src="./img/people1.jpeg"
+                            alt="people1"
+                            class="rounded-circle img-thumbnail float-end mx-3"
+                          />
+                          <h5>Awesome headline news title</h5>
+                          <p>02 MAY, 2014</p>
+                        </div>
+                      </div>
+    
+                      <div class="box-2 background-success py-3 px-3 text-light">
+                        <div class="d-flex align-items-center mb-5">
+                          <img
+                            src="./img/people5.jpg"
+                            alt="people5"
+                            class="rounded-circle img-thumbnail"
+                          />
+                          <p class="mx-4">@doinaslavici</p>
+                        </div>
+    
+                        <div class="content">
+                          <h5>Awesome life story title</h5>
+                          <p>29 APRIL, 2014</p>
+                          <p class="mb-2">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Facilis, expedita.
+                          </p>
+                          <button class="background-success-2 text-light p-1 px-2">
+                            Read more
                           </button>
                         </div>
                       </div>
                     </div>
+                    <div class="col-md-8">
+                      <div class="server-status text-light background-primary">
+                        <div
+                          class="d-flex px-3 py-2 justify-content-between align-items-center"
+                        >
+                          <span class="text-uppercase">your server status</span>
+                          <i class="fas fa-angle-up"></i>
+                        </div>
+                        <img src="./img/stock-chart.png" alt="" class="" />
+                      </div>
+                      <div class="description bg-white py-3 px-3">
+                        <div class="row">
+                          <div class="col-md-6 mb-3">
+                            <div class="box-content text-dark text-uppercase">
+                              <div class="d-flex mb-5">
+                                <div class="d-flex flex-column w-50">
+                                  <span class="">kernel memory</span>
+                                  <img
+                                    src="./img/bar-circle.png"
+                                    alt="bar-circle"
+                                    class="img-fluid"
+                                  />
+                                </div>
+                                <div class="d-flex flex-column w-50">
+                                  <span class="">physical memory</span>
+                                  <img
+                                    src="./img/bar-circle.png"
+                                    alt="bar-circle"
+                                    class="img-fluid"
+                                  />
+                                </div>
+                              </div>
+                              <button
+                                class="w-100 py-2 background-third text-light"
+                              >
+                                <i class="fab fa-sourcetree"></i> Resource monitor
+                              </button>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="box-content">
+                              <span class="text-uppercase">system status</span>
+                              <div class="progress-area mb-3 mt-2">
+                                <label for="handler"
+                                  >Handler -
+                                  <span class="text-danger">80%</span></label
+                                >
+                                <div class="progress" style="height: 10px">
+                                  <div
+                                    class="progress-bar bg-danger"
+                                    role="progressbar"
+                                    style="width: 80%"
+                                    aria-valuenow="80"
+                                    aria-valuemin="0"
+                                    aria-valuemax="100"
+                                  ></div>
+                                </div>
+                              </div>
+                              <div class="progress-area mb-3">
+                                <label for="handler"
+                                  >Threads -
+                                  <span class="text-warning">65%</span></label
+                                >
+                                <div class="progress" style="height: 10px">
+                                  <div
+                                    class="progress-bar bg-warning"
+                                    role="progressbar"
+                                    style="width: 65%"
+                                    aria-valuenow="65"
+                                    aria-valuemin="0"
+                                    aria-valuemax="100"
+                                  ></div>
+                                </div>
+                              </div>
+    
+                              <div class="progress-area mb-3">
+                                <label for="handler"
+                                  >Process -
+                                  <span class="text-success">30%</span></label
+                                >
+                                <div class="progress" style="height: 10px">
+                                  <div
+                                    class="progress-bar bg-success"
+                                    role="progressbar"
+                                    style="width: 30%"
+                                    aria-valuenow="30"
+                                    aria-valuemin="0"
+                                    aria-valuemax="100"
+                                  ></div>
+                                </div>
+                              </div>
+    
+                              <div class="progress-area mb-3">
+                                <label for="handler"
+                                  >Cached -
+                                  <span class="text-info">70%</span></label
+                                >
+                                <div class="progress" style="height: 10px">
+                                  <div
+                                    class="progress-bar bg-info"
+                                    role="progressbar"
+                                    style="width: 70%"
+                                    aria-valuenow="70"
+                                    aria-valuemin="0"
+                                    aria-valuemax="100"
+                                  ></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
-
-                <div class="col-md-4">
-                  <div class="forecast-weather background-success mb-4">
-                    <div class="content text-light position-relative p-4">
-                      <div class="text-center text-uppercase mb-5">
-                        <h5>yogyakarta,id</h5>
-                        <span>tonight</span>
-                      </div>
-                      <div
-                        class="cloud d-flex justify-content-between align-items-center mb-5"
-                      >
-                        <i class="fa-solid fa-cloud"></i>
-                        <div class="d-flex flex-column text-start">
-                          <h1 class="m-0">28</h1>
-                          <span class="m-0">Will rain at night</span>
-                        </div>
-                      </div>
-                      <div
-                        class="d-flex justify-content-between text-uppercase text-center"
-                      >
-                        <div class="box d-flex flex-column pt-5">
-                          <span class="mb-4">sat</span>
-                          <i class="fa-regular fa-moon fs-2 mb-4"></i>
-                          <p>27°</p>
-                        </div>
-                        <div class="box d-flex flex-column pt-5">
-                          <span class="mb-4">sun</span>
-                          <i class="fa-solid fa-cloud fs-2 mb-4"></i>
-                          <p>26°</p>
-                        </div>
-                        <div class="box d-flex flex-column pt-5">
-                          <span class="mb-4">mon</span>
-                          <i class="fa-regular fa-moon fs-2 mb-4"></i>
-                          <p>25°</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="media-social text-light mb-5">
-                    <div class="row">
-                      <div class="col-md-6">
-                        <div class="box text-center bg-facebook">
-                          <i class="fa-brands fa-facebook-f fs-1 mb-4"></i>
-                          <p>10K likes</p>
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="box text-center bg-twitter">
-                          <i class="fa-brands fa-twitter fs-1 mb-4"></i>
-                          <p>2K likes</p>
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="box text-center bg-basketball">
-                          <i class="fa-solid fa-basketball fs-1 mb-4"></i>
-                          <p>1K likes</p>
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="box text-center bg-linkedin">
-                          <i class="fa-brands fa-linkedin-in fs-1 mb-4"></i>
-                          <p>1K likes</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="friend-request">
+    
+                <div class="place-weather mb-4">
+                  <div class="row">
                     <div
-                      class="title d-flex align-items-center text-uppercase mb-3"
+                      class="title text-center text-uppercase text-secondary mb-4"
                     >
-                      <i class="fa fa-users" aria-hidden="true"></i>
-                      <p class="mx-2">Friend Requests</p>
+                      <span>your favorite places weather</span>
                     </div>
-                    <div class="row">
-                      <div class="col-md-12">
+                    <div class="col-md-3 mb-3">
+                      <div class="box-wrapper w-100 bg-white text-center pb-3">
                         <div
-                          class="box background-primary pt-3 text-light pb-3 px-3 d-flex justify-content-between mb-4"
+                          class="box-header d-flex flex-column mb-3 py-3 background-warning text-center text-light"
                         >
-                          <div class="d-flex">
-                            <img
-                              src="./img/people4.jpeg"
-                              alt="people2"
-                              class="rounded-circle img-fluid"
-                            />
-                            <div class="mx-2">
-                              <span>Mya Woestel</span>
-                              <p class="text-primary-2">@myawoestel</p>
-                            </div>
-                          </div>
-                          <div class="checklist d-flex background-primary-2">
-                            <i class="fa-solid fa-check m-auto"></i>
+                          <i class="fas fa-sun mb-3"></i>
+                          <h1 class="mb-3">27°</h1>
+                          <p>It's sunny</p>
+                        </div>
+                        <h3 class="text-uppercase">boyolali,id</h3>
+                        <p class="text-secondary">My hometown</p>
+                      </div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                      <div class="box-wrapper w-100 bg-white text-center pb-3">
+                        <div
+                          class="box-header d-flex flex-column mb-3 py-3 background-third text-center text-light"
+                        >
+                          <i class="fas fa-cloud-rain mb-3"></i>
+                          <h1 class="mb-3">27°</h1>
+                          <p>It's raining</p>
+                        </div>
+                        <h3 class="text-uppercase">paris,france</h3>
+                        <p class="text-secondary">My dream city</p>
+                      </div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                      <div class="box-wrapper w-100 bg-white text-center pb-3">
+                        <div
+                          class="box-header d-flex flex-column mb-3 py-3 background-primary text-center text-light"
+                        >
+                          <i class="fas fa-wind mb-3"></i>
+                          <h1 class="mb-3">27°</h1>
+                          <p>It's wind</p>
+                        </div>
+                        <h3 class="text-uppercase">mecca,ksa</h3>
+                        <p class="text-secondary">Someday I'll be there</p>
+                      </div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                      <div class="box-wrapper w-100 bg-white text-center pb-3">
+                        <div
+                          class="box-header d-flex flex-column mb-3 py-3 background-secondary text-center text-light"
+                        >
+                          <i class="fas fa-cloud-moon mb-3"></i>
+                          <h1 class="mb-3">27°</h1>
+                          <p>It's cloudly tonight</p>
+                        </div>
+                        <h3 class="text-uppercase">tokyo,japan</h3>
+                        <p class="text-secondary">I just wanna visit</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="popular-item bg-white py-3 px-2 mb-4">
+                  <div class="row">
+                    <div
+                      class="title text-uppercase text-secondary text-center mb-3"
+                    >
+                      last week popular item
+                    </div>
+    
+                    <div class="col-md-3 mb-2">
+                      <div class="box-wrapper">
+                        <div class="d-flex">
+                          <img src="./img/people5.jpg" alt="people5" />
+                          <div class="mx-3">
+                            <span class="fw-bold txt-secondary"
+                              >Product Name here</span
+                            >
+                            <p class="text-uppercase text-secondary">brand name</p>
+                            <h1 class="txt-third">$50.00</h1>
                           </div>
                         </div>
-                        <div
-                          class="box bg-white pt-3 text-light pb-3 px-3 d-flex justify-content-between mb-4"
-                        >
-                          <div class="d-flex">
-                            <img
-                              src="./img/people3.jpg"
-                              alt="people2"
-                              class="rounded-circle img-fluid"
-                            />
-                            <div class="mx-2">
-                              <span class="text-dark">Elizabeth owens</span>
-                              <p class="text-primary">@elizaebethowens</p>
-                            </div>
-                          </div>
-                          <div class="checklist d-flex background-success">
-                            <i class="fa-solid fa-check m-auto"></i>
+                      </div>
+                    </div>
+                    <div class="col-md-3 mb-2">
+                      <div class="box-wrapper">
+                        <div class="d-flex">
+                          <img src="./img/people5.jpg" alt="people5" />
+                          <div class="mx-3">
+                            <span class="fw-bold txt-secondary"
+                              >Product Name here</span
+                            >
+                            <p class="text-uppercase text-secondary">brand name</p>
+                            <h1 class="txt-third">$50.00</h1>
                           </div>
                         </div>
-                        <div
-                          class="box bg-white pt-3 text-light pb-3 px-3 d-flex justify-content-between mb-3"
-                        >
-                          <div class="d-flex">
-                            <img
-                              src="./img/people1.jpeg"
-                              alt="people2"
-                              class="rounded-circle img-fluid"
-                            />
-                            <div class="mx-2">
-                              <span class="text-dark">Herold Chavez</span>
-                              <p class="text-primary">@heroldchavez</p>
-                            </div>
+                      </div>
+                    </div>
+                    <div class="col-md-3 mb-2">
+                      <div class="box-wrapper">
+                        <div class="d-flex">
+                          <img src="./img/people5.jpg" alt="people5" />
+                          <div class="mx-3">
+                            <span class="fw-bold txt-secondary"
+                              >Product Name here</span
+                            >
+                            <p class="text-uppercase text-secondary">brand name</p>
+                            <h1 class="txt-third">$50.00</h1>
                           </div>
-                          <div class="checklist d-flex background-success">
-                            <i class="fa-solid fa-check m-auto"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-3 mb-2">
+                      <div class="box-wrapper">
+                        <div class="d-flex">
+                          <img src="./img/people5.jpg" alt="people5" />
+                          <div class="mx-3">
+                            <span class="fw-bold txt-secondary"
+                              >Product Name here</span
+                            >
+                            <p class="text-uppercase text-secondary">brand name</p>
+                            <h1 class="txt-third">$50.00</h1>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="featured-product mb-5">
+                  <div class="row">
+                    <div class="col-md-8 mb-3">
+                      <div class="box-content d-flex w-100">
+                        <div class="w-100 description px-3 py-4">
+                          <p class="text-secondary text-uppercase mb-4">
+                            featured product
+                          </p>
+                          <h2 class="txt-secondary mb-4">Your product name here</h2>
+                          <b>$220.00</b>
+                          <p class="mb-3">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Sunt ea soluta similique sequi voluptates alias quos at
+                            suscipit error distinctio?
+                          </p>
+                          <div class="mb-4">
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-secondary"></i>
+                            <i class="fas fa-star text-secondary"></i>
+                          </div>
+                          <button class="w-100 background-primary py-2 text-light">
+                            Add to cart
+                          </button>
+                        </div>
+                        <img src="./img/laptop.jpg" alt="" class="img-fluid w-100" />
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="reminder background-third text-light">
+                        <div class="header background-dark text-center pb-2">
+                          <i class="far fa-clock fs-1 mb-5"></i>
+                          <p>My personal reminder</p>
+                        </div>
+                        <div class="body p-3">
+                          <span class="mb-3">Next week agenda</span>
+                          <div class="line-sm bg-danger mt-4 mb-3"></div>
+                          <p class="text-center text-light mb-2">
+                            Go to school again, do homework again meet some best
+                            friend again.
+                          </p>
+                          <p class="text-center mb-5">Wrote about a week ago</p>
+    
+                          <div class="d-flex justify-content-center mb-3">
+                            <button class="btn btn-outline-light border-light">
+                              <i class="fas fa-arrow-left"></i>
+                            </button>
+                            <button class="btn btn-outline-light border-light mx-2">
+                              <i class="fas fa-arrow-right"></i>
+                            </button>
                           </div>
                         </div>
                       </div>
@@ -862,72 +1175,23 @@
                   </div>
                 </div>
               </div>
-            </div>
-
-            <div class="status">
-              <div class="row">
-                <div class="col-md-4">
-                  <div class="box-1 background-fourth mb-4">
-                    <div class="box-content-1 px-3 py-3 text-light">
-                      <img
-                        src="./img/people1.jpeg"
-                        alt="people1"
-                        class="rounded-circle img-thumbnail float-end mx-3"
-                      />
-                      <h5>Awesome headline news title</h5>
-                      <p>02 MAY, 2014</p>
-                    </div>
-                  </div>
-
-                  <div class="box-2 background-success py-2 px-3 text-light">
-                    <div class="d-flex align-items-center mb-5">
-                      <img
-                        src="./img/people5.jpg"
-                        alt="people5"
-                        class="rounded-circle img-thumbnail"
-                      />
-                      <p class="mx-4">@doinaslavici</p>
-                    </div>
-
-                    <div class="content">
-                      <h5>Awesome life story title</h5>
-                      <p>29 APRIL, 2014</p>
-                      <p class="mb-2">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Facilis, expedita.
-                      </p>
-                      <button class="background-success-2 text-light p-1 px-2">
-                        Read more
-                      </button>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-8">
-                  <div
-                    class="server-status text-light background-primary"
-                  >
-                    <div
-                      class="d-flex px-3 py-2  justify-content-between align-items-center"
+              <div class="footer bg-white d-flex align-items-center py-4">
+                <div class="mx-auto text-center">
+                  <p>
+                    @ 2014
+                    <a href="" class="text-decoration-none txt-secondary"
+                      >Your Company</a
                     >
-                      <span class="text-uppercase">your server status</span>
-                      <i class="fa-solid fa-angle-up"></i>
-                    </div>
-                    <img src="./img/stock-chart.png" alt="" class="">
-                  </div>
-                  <div class="description bg-white pt-5 px-3 d-flex">
-                    <div class="w-50">
-                      <span class="text-uppercase">kernel memory</span>
-                      SP
-                    </div>
-                    <div class="w-50">
-
-                    </div>
-                  </div>
+                  </p>
+                  <p>
+                    Design by Alfred. Purchase this item at
+                    <a href="" class="text-decoration-none text-secondary"></a>
+                  </p>
                 </div>
               </div>
-            </div>
+            </section>
           </div>
-        </section>
+        </div>
       </div>
     </div>
 

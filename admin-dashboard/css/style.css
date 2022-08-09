@@ -1,4 +1,4 @@
-/* Global Style */
+/* Global Style Start */
 p {
   margin: 0;
 }
@@ -24,14 +24,51 @@ button {
 }
 
 .background-primary {
-  background-color: #8fc051;
+  background-color: #8ac352;
 }
 
-.background-primary-2 {
+.background-primary-thin {
+  background-color: rgba(138, 195, 82, 0.8);
+}
+
+.background-primary-solid {
   background-color: #699e31;
 }
 .text-primary-2 {
   color: #699e31;
+}
+
+.background-secondary {
+  background-color: #37bd9c;
+}
+
+.background-secondary-thin {
+  background-color: rgba(55, 189, 156, 0.8);
+}
+
+.background-third {
+  background-color: #ef5440;
+}
+.background-third-thin {
+  background-color: rgba(239, 84, 64, 0.8);
+}
+.txt-third {
+  color: #ef5440;
+}
+
+.background-third-solid {
+  background-color: #d34836;
+}
+
+.background-warning {
+  background-color: #f4bc44;
+}
+.background-warning-thin {
+  background-color: rgba(244, 188, 68, 0.8);
+}
+
+.background-dark {
+  background-color: #434a54;
 }
 
 .background-success {
@@ -42,22 +79,19 @@ button {
   background-color: #2e98c7;
 }
 
-.background-secondary {
-  background-color: #37bd9c;
-}
-
-.background-third {
-  background-color: #ef5440;
-}
-
-.background-fourth {
-  background-color: #f4bc44;
+.txt-secondary {
+  color: #37bd9c;
 }
 
 .line {
   width: 100%;
   height: 6px;
   background-color: white;
+}
+
+.line-sm {
+  width: 100%;
+  height: 1px;
 }
 .line .left {
   width: 70%;
@@ -68,22 +102,12 @@ line .right {
   width: 30%;
   height: 100%;
 }
-.w-40 {
-  width: 45%;
-}
 
-.main-app {
-  width: 100%;
+/* Global Style End */
+.main-app .sidebar {
   height: 500vh;
 }
-
-.main-app .sidebar {
-  width: 25%;
-  /* display: none; */
-  font-size: 13px;
-}
-
-.main-app .sidebar .image-box {
+.main-app .sidebar img {
   width: 40px;
   height: 40px;
 }
@@ -103,12 +127,6 @@ line .right {
 
 .main-app .sidebar .main-menu .menu-item span {
   margin-right: 7px;
-}
-
-.main-app .sidebar .image-box img {
-  width: inherit;
-  height: inherit;
-  object-fit: cover;
 }
 
 .switch {
@@ -169,15 +187,7 @@ input:checked + .slider:before {
 /* Main Content */
 .main-app .main-content {
   width: 100%;
-  height: 500vh;
   background-color: #e7e9f0;
-}
-header {
-  height: 71px;
-}
-
-nav {
-  height: 71px;
 }
 
 nav .icon-notification {
@@ -185,38 +195,23 @@ nav .icon-notification {
   align-items: center;
 }
 
-nav .image-box {
+nav img {
   width: 50px;
   height: 50px;
-}
-
-nav .image-box img {
-  width: inherit;
-  height: inherit;
   object-fit: cover;
 }
 
 /* Dashboard */
 .dashboard .today .box {
-  width: 243px;
-  height: 230px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-image: url("./../img/bubble1.png");
+  background-size: cover;
 }
 
 .dashboard .today .box img {
-  width: inherit;
-  height: inherit;
+  width: 100%;
   object-fit: cover;
-}
-
-.dashboard .today .box .background {
-  width: inherit;
-  height: inherit;
-  opacity: 0.8;
-}
-
-.dashboard .today .box .content {
-  width: inherit;
-  height: inherit;
 }
 
 .dashboard .research {
@@ -225,7 +220,6 @@ nav .image-box img {
 
 .dashboard .research .line-chart {
   width: 100%;
-  height: 440px;
 }
 
 .dashboard .research .line-chart button {
@@ -237,22 +231,10 @@ nav .image-box img {
   color: white;
 }
 
-.dashboard .research .last-year {
-  height: 110px;
-}
-
-.dashboard .research .lifetime {
-  height: 130px;
-}
-
 .dashboard .research .rent-house {
   width: 100%;
   height: 620px;
   background-color: white;
-}
-
-.dashboard .research .rent-house .title {
-  height: 70px;
 }
 
 .dashboard .research .rent-house img {
@@ -260,17 +242,8 @@ nav .image-box img {
   object-fit: cover;
 }
 
-.dashboard .research .task {
-  height: 620px;
-  background-color: white;
-}
-
-.dashboard .research .task .title {
-  height: 70px;
-}
 
 .dashboard .research .rent-house .price {
-  height: 100px;
   background-color: #f9b654;
 }
 
@@ -293,19 +266,9 @@ nav .image-box img {
 
 .dashboard .research .forecast-weather {
   width: 100%;
-  height: 500px;
-  background-image: url("./../img/jogja.jpg");
+  background-image: url("./../img/nature.jpg");
   background-size: cover;
   background-position: center;
-}
-
-.dashboard .research .forecast-weather::before {
-  content: "";
-  width: 335px;
-  height: 500px;
-  background-color: black;
-  position: absolute;
-  opacity: 0.3;
 }
 
 .dashboard .research .forecast-weather .cloud i {
@@ -320,24 +283,11 @@ nav .image-box img {
   content: "°";
 }
 
-.dashboard .research .forecast-weather .content .box {
-  width: 90px;
-  height: 180px;
-}
-
-.dashboard .research .media-social {
-  height: 300px;
-}
 
 .dashboard .research .media-social .box {
   width: 100%;
   height: 150px;
-  margin-bottom: 30px;
   padding: 30px 0px;
-}
-
-.dashboard .research .friend-request {
-  height: 300px;
 }
 
 .dashboard .research .friend-request .box {
@@ -382,21 +332,71 @@ nav .image-box img {
   margin-top: 90px;
 }
 
-.dashboard .status .box-2 {
-  width: 100%;
-  height: 270px;
-}
-
 .dashboard .status .server-status {
   height: 248px;
 }
 
-.dashboard .status .server-status img{
+.dashboard .status .server-status img {
   width: 100%;
   height: 200px;
   object-fit: cover;
 }
 
-.dashboard .status .description{
-  height: 295px;
+.dashboard .place-weather .box-wrapper .box-header i {
+  font-size: 150px;
+}
+
+.dashboard .popular-item .box-wrapper img {
+  width: 80px;
+  height: 130px;
+  object-fit: cover;
+}
+
+.dashboard .featured-product {
+  width: 100%;
+}
+
+.dashboard .featured-product .box-content .description {
+  width: 40%;
+  background-color: white;
+  height: 450px;
+}
+
+.dashboard .featured-product .box-content img {
+  width: 60%;
+  height: 450px;
+  object-fit: cover;
+}
+
+.dashboard .featured-product .reminder {
+  width: 100%;
+}
+
+.dashboard .featured-product .reminder .header {
+  padding-top: 30px;
+}
+
+@media screen and (max-width: 576px) {
+  .sidebar {
+    display: none;
+  }
+  .form-control {
+    display: none;
+  }
+  .icon-notification{
+    width: 100%;
+  }
+
+  .profile .body img,
+  .profile .body span {
+    display: none;
+  }
+
+  .featured-product .box-content {
+    flex-direction: column;
+  }
+  .research .line-chart span,
+  .research .line-chart button{
+    font-size: 12px;
+  }
 }
