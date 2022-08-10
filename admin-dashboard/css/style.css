@@ -104,9 +104,7 @@ line .right {
 }
 
 /* Global Style End */
-.main-app .sidebar {
-  height: 500vh;
-}
+
 .main-app .sidebar img {
   width: 40px;
   height: 40px;
@@ -187,6 +185,7 @@ input:checked + .slider:before {
 /* Main Content */
 .main-app .main-content {
   width: 100%;
+  height: 100%;
   background-color: #e7e9f0;
 }
 
@@ -233,7 +232,6 @@ nav img {
 
 .dashboard .research .rent-house {
   width: 100%;
-  height: 620px;
   background-color: white;
 }
 
