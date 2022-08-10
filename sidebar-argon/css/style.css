@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global Style Start */
+
+
+.background-purple {
+  background-color: #5c67e1;
+}
+.text-purple {
+  color: #5c67e1;
+}
+
+.text-pink {
+  color: #f19aac;
+}
+
+.background-orange {
+  background-color: #fa5838;
+}
+.text-orange {
+  color: #fa5838;
+}
+
+.background-secondary {
+  background-color: rgb(116, 114, 114, 0.2);
+}
+
+.background-dark {
+    background-color: #162644;
+}
+
+.background-main {
+    background-color: #f6f8fe;
+}
+
+.background-gradient {
+    background-image: linear-gradient(to right, #5665e0, #7655e0);
+}
+
+/* Global Style End */
+
+
+.sidebar {
+  /* display: none; */
+}
+
+td,
+th {
+  padding: 10px 20px !important;
+}
+
+.navbar-body {
+  display: inline-block !important;
+}
+
+.navbar-logo {
+  width: 130px;
+}
+
+.nav-item-icon {
+  width: 20%;
+}
+
+.profile-image, .users {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+}
+
+.users{
+    margin-right: -15px;
+    border: 3px solid white;
+}
+
+.project-logo {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+}
+
+.search-input {
+  width: 50%;
+}
+
+.card-icon {
+  width: 50px;
+  height: 50px;
+}
+
+ul {
+    list-style: none;
+    padding: 0px 12px;
+}
+ul .pending::before {
+  content: "\2022"; 
+  color: #fa5838;
+  font-weight: bolder;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+ul .completed::before {
+  content: "\2022"; 
+  color: #28c77e;
+  font-weight: bolder;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+ul .delayed::before {
+  content: "\2022"; 
+  color: red;
+  font-weight: bolder;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+ul .on-schedule::before {
+  content: "\2022"; 
+  color: #27cbee;
+  font-weight: bolder;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+@media screen and (max-width: 768px){
+  .navbar-body {
+    display: flex !important;
+  }
+
+  .navbar-logo-wrapp {
+    margin: 0 !important;
+  }
+
+  .nav-user {
+    width: 100% !important;
+  }
+
+  .nav-item-icon {
+    width: 10%;
+  }
+}

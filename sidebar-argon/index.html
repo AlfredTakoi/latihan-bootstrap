@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./../assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./fa5/css/all.css" />
+    <title>Argon Dashboard</title>
+  </head>
+  <body>
+    <div class="row main-app background-main gx-0">
+      <div class="col-md-2 bg-light shadow">
+        <nav
+          class="sidebar navbar navbar-expand-lg navbar-light.
+           w-100 "
+        >
+          <div class="container-fluid navbar-body">
+            <a class="navbar-brand navbar-logo-wrapp" href="#">
+              <img
+                src="./img/logo.png"
+                alt=""
+                class="navbar-logo m-auto d-block"
+              />
+              <p></p>
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav flex-column w-100">
+                <li class="nav-item ps-2">
+                  <a class="nav-link" aria-current="page" href="#">
+                    <i class="fas fa-desktop text-purple nav-item-icon"></i>
+                    Dashboard</a
+                  >
+                </li>
+                <li class="nav-item ps-2">
+                  <a class="nav-link" aria-current="page" href="#">
+                    <i
+                      class="fas fa-plane-departure text-purple nav-item-icon"
+                    ></i>
+                    Icon</a
+                  >
+                </li>
+                <li class="nav-item ps-2">
+                  <a class="nav-link" aria-current="page" href="#">
+                    <i
+                      class="fas fa-map-marker-alt text-danger nav-item-icon"
+                    ></i>
+                    Maps</a
+                  >
+                </li>
+                <li class="nav-item ps-2">
+                  <a class="nav-link" aria-current="page" href="#">
+                    <i class="fas fa-user text-warning nav-item-icon"></i>
+                    User</a
+                  >
+                </li>
+                <li class="nav-item ps-2 border-start border-2 border-primary">
+                  <a class="nav-link active" aria-current="page" href="#">
+                    <i class="fas fa-list text-danger nav-item-icon"></i>
+                    Table</a
+                  >
+                </li>
+                <li class="nav-item ps-2">
+                  <a class="nav-link" aria-current="page" href="#">
+                    <i class="fas fa-sign-in-alt text-info nav-item-icon"></i>
+                    Login</a
+                  >
+                </li>
+                <li class="nav-item mb-3 ps-2">
+                  <a class="nav-link" aria-current="page" href="#">
+                    <i class="fas fa-registered text-pink nav-item-icon"></i>
+                    Register</a
+                  >
+                </li>
+                <div class="border-bottom border-1 mb-3"></div>
+
+                <li class="nav-item ps-2">
+                  <a class="nav-link" aria-current="page" href="#">
+                    <i
+                      class="fas fa-location-arrow text-secondary opacity-75 nav-item-icon"
+                    ></i>
+                    Getting Started</a
+                  >
+                </li>
+                <li class="nav-item ps-2">
+                  <a class="nav-link" aria-current="page" href="#">
+                    <i
+                      class="fas fa-globe-asia text-secondary opacity-75 nav-item-icon"
+                    ></i>
+                    Foundation</a
+                  >
+                </li>
+                <li class="nav-item ps-2">
+                  <a class="nav-link" aria-current="page" href="#">
+                    <i
+                      class="fas fa-archive text-secondary opacity-75 nav-item-icon"
+                    ></i>
+                    Components</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <div class="col-md-10">
+        <nav class="navbar navbar-content navbar-expand-lg navbar-dark background-gradient mb-4">
+          <div class="container-fluid">
+            <a class="navbar-brand text-uppercase" href="#">table</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarTogglerDemo02"
+              aria-controls="navbarTogglerDemo02"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="collapse navbar-collapse justify-content-end"
+              id="navbarTogglerDemo02"
+            >
+              <div
+                class="d-flex w-50 justify-content-end align-items-center nav-user"
+              >
+                <input
+                  type="text"
+                  class="form-control rounded-pill search-input border-3 border-white bg-transparent me-3"
+                  placeholder="&#xF002; Search"
+                  
+                />
+                <img
+                  src="./img/people2.jpeg"
+                  alt="people2"
+                  class="profile-image rounded-circle me-3"
+                />
+                <span class="username-profile text-light">Jesicca Jones</span>
+              </div>
+            </div>
+          </div>
+        </nav>
+
+        <div class="main-content">
+          <div class="container-fluid">
+            <div class="row background-gradient
+            
+            
+            
+            
+            
+            
+            ">
+              <div class="col-md-3 mb-3">
+                <div class="card border-0 shadow  w-100 py-2 px-3">
+                  <div class="d-flex justify-content-between">
+                    <div class="content-title">
+                      <span class="text-uppercase text-secondary">traffic</span>
+                      <h3>350,897</h3>
+                    </div>
+                    <div
+                      class="card-icon bg-danger rounded-circle text-light d-flex"
+                    >
+                      <i class="fas fa-chart-bar m-auto"></i>
+                    </div>
+                  </div>
+                  <p class="m-0">
+                    <span class="text-success me-3"
+                      ><i class="fa fa-arrow-up" aria-hidden="true"></i>
+                      3,38%</span
+                    >
+                    Since last month
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-3 mb-3">
+                <div class="card border-0 shadow w-100 py-2 px-3">
+                  <div class="d-flex justify-content-between">
+                    <div class="content-title">
+                      <span class="text-uppercase text-secondary"
+                        >new users</span
+                      >
+                      <h3>2,356</h3>
+                    </div>
+                    <div
+                      class="card-icon background-orange rounded-circle text-light d-flex"
+                    >
+                      <i class="fas fa-chart-pie m-auto"></i>
+                    </div>
+                  </div>
+                  <p class="m-0">
+                    <span class="text-danger me-3"
+                      ><i class="fa fa-arrow-up" aria-hidden="true"></i>
+                      3,38%</span
+                    >
+                    Since last week
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-3 mb-3">
+                <div class="card border-0 shadow w-100 py-2 px-3">
+                  <div class="d-flex justify-content-between">
+                    <div class="content-title">
+                      <span class="text-uppercase text-secondary">traffic</span>
+                      <h3>350,897</h3>
+                    </div>
+                    <div
+                      class="card-icon bg-warning rounded-circle text-light d-flex"
+                    >
+                      <i class="fas fa-users m-auto"></i>
+                    </div>
+                  </div>
+                  <p class="m-0">
+                    <span class="text-orange me-3"
+                      ><i class="fa fa-arrow-up" aria-hidden="true"></i>
+                      3,38%</span
+                    >
+                    Since last month
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-3 mb-3">
+                <div class="card border-0 shadow w-100 py-2 px-3">
+                  <div class="d-flex justify-content-between">
+                    <div class="content-title">
+                      <span class="text-uppercase text-secondary">traffic</span>
+                      <h3>350,897</h3>
+                    </div>
+                    <div
+                      class="card-icon bg-info rounded-circle text-light d-flex"
+                    >
+                      <i class="fas fa-percent m-auto"></i>
+                    </div>
+                  </div>
+                  <p class="m-0">
+                    <span class="text-success me-3"
+                      ><i class="fa fa-arrow-up" aria-hidden="true"></i>
+                      3,38%</span
+                    >
+                    Since last month
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card border-0 shadow py-3 mb-5">
+              <div class="card-title px-4">
+                <h5 class="">Card Table</h5>
+              </div>
+              <div class="table-responsive">
+                <table class="table">
+                  <thead class="background-secondary">
+                    <tr class="text-uppercase text-secondary">
+                      <th scope="col">project</th>
+                      <th scope="col">budget</th>
+                      <th scope="col">status</th>
+                      <th scope="col">users</th>
+                      <th scope="col">completion</th>
+                      <th scope="col"></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <img
+                          src="./img/bootstrap.png"
+                          alt="bootstrap-logo"
+                          class="project-logo me-3"
+                        />
+                        Argon Design System
+                      </td>
+                      <td>$2,500 USD</td>
+                      <td>
+                        <ul>
+                          <li class="pending">pending</li>
+                        </ul>
+                      </td>
+                      <td>
+                        <div class="d-flex">
+                          <img
+                            src="./img/people1.jpeg"
+                            alt="people1"
+                            class="users rounded-circle"
+                          />
+                          <img
+                            src="./img/people2.jpeg"
+                            alt="people1"
+                            class="users rounded-circle"
+                          />
+                          <img
+                            src="./img/people3.jpg"
+                            alt="people1"
+                            class="users rounded-circle"
+                          />
+                          <img
+                            src="./img/people4.jpeg"
+                            alt="people1"
+                            class="users rounded-circle"
+                          />
+                        </div>
+                      </td>
+                      <td>
+                        <span>60%</span>
+                        <div class="progress" style="height: 5px">
+                          <div
+                            class="progress-bar background-orange"
+                            role="progressbar"
+                            style="width: 60%"
+                            aria-valuenow="60"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                          ></div>
+                        </div>
+                      </td>
+                      <td><i class="fas fa-ellipsis-v text-secondary"></i></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <img
+                          src="./img/angular.png"
+                          alt="bootstrap-logo"
+                          class="project-logo me-3"
+                        />
+                        Angular Now UI Kit Pro
+                      </td>
+                      <td>$1,800 USD</td>
+                      <td>
+                        <ul>
+                          <li class="completed">completed</li>
+                        </ul>
+                      </td>
+                      <td>
+                        <div class="d-flex">
+                          <img
+                            src="./img/people1.jpeg"
+                            alt="people1"
+                            class="users rounded-circle"
+                          />
+                          <img
+                            src="./img/people2.jpeg"
+                            alt="people1"
+                            class="users rounded-circle"
+                          />
+                          <img
+                            src="./img/people3.jpg"
+                            alt="people1"
+                            class="users rounded-circle"
+                          />
+                          <img
+                            src="./img/people4.jpeg"
+                            alt="people1"
+                            class="users rounded-circle"
+                          />
+                        </div>
+                      </td>
+                      <td>
+                        <span>100%</span>
+                        <div class="progress" style="height: 5px">
+                          <div
+                            class="progress-bar bg-success"
+                            role="progressbar"
+                            style="width: 100%"
+                            aria-valuenow="100"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                          ></div>
+                        </div>
+                      </td>
+                      <td><i class="fas fa-ellipsis-v text-secondary"></i></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <img
+                          src="./img/diamond.png"
+                          alt="bootstrap-logo"
+                          class="project-logo me-3"
+                        />
+                        Black Dashboard
+                      </td>
+                      <td>$3,150 USD</td>
+                      <td>
+                        <ul>
+                          <li class="delayed">delayed</li>
+                        </ul>
+                      </td>
+                      <td>
+                        <div class="d-flex">
+                          <img
+                            src="./img/people1.jpeg"
+                            alt="people1"
+                            class="users rounded-circle"
+                          />
+                          <img
+                            src="./img/people2.jpeg"
+                            alt="people1"
+                            class="users rounded-circle"
+                          />
+                          <img
+                            src="./img/people3.jpg"
+                            alt="people1"
+                            class="users rounded-circle"
+                          />
+                          <img
+                            src="./img/people4.jpeg"
+                            alt="people1"
+                            class="users rounded-circle"
+                          />
+                        </div>
+                      </td>
+                      <td>
+                        <span>72%</span>
+                        <div class="progress" style="height: 5px">
+                          <div
+                            class="progress-bar bg-danger"
+                            role="progressbar"
+                            style="width: 72%"
+                            aria-valuenow="72"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                          ></div>
+                        </div>
+                      </td>
+                      <td><i class="fas fa-ellipsis-v text-secondary"></i></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <img
+                          src="./img/react.png"
+                          alt="bootstrap-logo"
+                          class="project-logo me-3"
+                        />
+                        React Dashboard
+                      </td>
+                      <td>$4,400 USD</td>
+                      <td>
+                        <ul>
+                          <li class="on-schedule">on schedule</li>
+                        </ul>
+                      </td>
+                      <td>
+                        <div class="d-flex">
+                          <img
+                            src="./img/people1.jpeg"
+                            alt="people1"
+                            class="users rounded-circle"
+                          />
+                          <img
+                            src="./img/people2.jpeg"
+                            alt="people1"
+                            class="users rounded-circle"
+                          />
+                          <img
+                            src="./img/people3.jpg"
+                            alt="people1"
+                            class="users rounded-circle"
+                          />
+                          <img
+                            src="./img/people4.jpeg"
+                            alt="people1"
+                            class="users rounded-circle"
+                          />
+                        </div>
+                      </td>
+                      <td>
+                        <span>90%</span>
+                        <div class="progress" style="height: 5px">
+                          <div
+                            class="progress-bar bg-info"
+                            role="progressbar"
+                            style="width: 90%"
+                            aria-valuenow="90"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                          ></div>
+                        </div>
+                      </td>
+                      <td><i class="fas fa-ellipsis-v text-secondary"></i></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <img
+                          src="./img/vue.png"
+                          alt="bootstrap-logo"
+                          class="project-logo me-3"
+                        />
+                        Vue Paper UI Kit Dashboard
+                      </td>
+                      <td>$2,200 USD</td>
+                      <td>
+                        <ul>
+                          <li class="completed">completed</li>
+                        </ul>
+                      </td>
+                      <td>
+                        <div class="d-flex">
+                          <img
+                            src="./img/people1.jpeg"
+                            alt="people1"
+                            class="users rounded-circle"
+                          />
+                          <img
+                            src="./img/people2.jpeg"
+                            alt="people1"
+                            class="users rounded-circle"
+                          />
+                          <img
+                            src="./img/people3.jpg"
+                            alt="people1"
+                            class="users rounded-circle"
+                          />
+                          <img
+                            src="./img/people4.jpeg"
+                            alt="people1"
+                            class="users rounded-circle"
+                          />
+                        </div>
+                      </td>
+                      <td>
+                        <span>100%</span>
+                        <div class="progress" style="height: 5px">
+                          <div
+                            class="progress-bar bg-success"
+                            role="progressbar"
+                            style="width: 100%"
+                            aria-valuenow="100"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                          ></div>
+                        </div>
+                      </td>
+                      <td><i class="fas fa-ellipsis-v text-secondary"></i></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <nav aria-label="Page navigation example">
+                <ul class="pagination justify-content-end">
+                  <li class="page-item disabled">
+                    <a
+                      class="page-link"
+                      href="#"
+                      tabindex="-1"
+                      aria-disabled="true"
+                      >Previous</a
+                    >
+                  </li>
+                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">Next</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+
+            <div class="card border-0 shadow background-dark py-3 mb-5">
+              <div class="card-title px-4 text-light">
+                <h5 class="">Card Table</h5>
+              </div>
+              <div class="table-responsive">
+                <table class="table table-responsive">
+                  <thead class="background-secondary">
+                    <tr class="text-uppercase text-primary opacity-50">
+                      <th scope="col">project</th>
+                      <th scope="col">budget</th>
+                      <th scope="col">status</th>
+                      <th scope="col">users</th>
+                      <th scope="col">completion</th>
+                      <th scope="col"></th>
+                    </tr>
+                  </thead>
+                  <tbody class="text-light">
+                    <tr>
+                      <td>
+                        <img
+                          src="./img/bootstrap.png"
+                          alt="bootstrap-logo"
+                          class="project-logo me-3"
+                        />
+                        Argon Design System
+                      </td>
+                      <td>$2,500 USD</td>
+                      <td>
+                        <ul>
+                          <li class="pending">pending</li>
+                        </ul>
+                      </td>
+                      <td>
+                        <div class="d-flex">
+                          <img
+                            src="./img/people1.jpeg"
+                            alt="people1"
+                            class="users rounded-circle"
+                          />
+                          <img
+                            src="./img/people2.jpeg"
+                            alt="people1"
+                            class="users rounded-circle"
+                          />
+                          <img
+                            src="./img/people3.jpg"
+                            alt="people1"
+                            class="users rounded-circle"
+                          />
+                          <img
+                            src="./img/people4.jpeg"
+                            alt="people1"
+                            class="users rounded-circle"
+                          />
+                        </div>
+                      </td>
+                      <td>
+                        <span>60%</span>
+                        <div class="progress" style="height: 5px">
+                          <div
+                            class="progress-bar background-orange"
+                            role="progressbar"
+                            style="width: 60%"
+                            aria-valuenow="60"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                          ></div>
+                        </div>
+                      </td>
+                      <td><i class="fas fa-ellipsis-v text-secondary"></i></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <img
+                          src="./img/angular.png"
+                          alt="bootstrap-logo"
+                          class="project-logo me-3"
+                        />
+                        Angular Now UI Kit Pro
+                      </td>
+                      <td>$1,800 USD</td>
+                      <td>
+                        <ul>
+                          <li class="completed">completed</li>
+                        </ul>
+                      </td>
+                      <td>
+                        <div class="d-flex">
+                          <img
+                            src="./img/people1.jpeg"
+                            alt="people1"
+                            class="users rounded-circle"
+                          />
+                          <img
+                            src="./img/people2.jpeg"
+                            alt="people1"
+                            class="users rounded-circle"
+                          />
+                          <img
+                            src="./img/people3.jpg"
+                            alt="people1"
+                            class="users rounded-circle"
+                          />
+                          <img
+                            src="./img/people4.jpeg"
+                            alt="people1"
+                            class="users rounded-circle"
+                          />
+                        </div>
+                      </td>
+                      <td>
+                        <span>100%</span>
+                        <div class="progress" style="height: 5px">
+                          <div
+                            class="progress-bar bg-success"
+                            role="progressbar"
+                            style="width: 100%"
+                            aria-valuenow="100"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                          ></div>
+                        </div>
+                      </td>
+                      <td><i class="fas fa-ellipsis-v text-secondary"></i></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <img
+                          src="./img/diamond.png"
+                          alt="bootstrap-logo"
+                          class="project-logo me-3"
+                        />
+                        Black Dashboard
+                      </td>
+                      <td>$3,150 USD</td>
+                      <td>
+                        <ul>
+                          <li class="delayed">delayed</li>
+                        </ul>
+                      </td>
+                      <td>
+                        <div class="d-flex">
+                          <img
+                            src="./img/people1.jpeg"
+                            alt="people1"
+                            class="users rounded-circle"
+                          />
+                          <img
+                            src="./img/people2.jpeg"
+                            alt="people1"
+                            class="users rounded-circle"
+                          />
+                          <img
+                            src="./img/people3.jpg"
+                            alt="people1"
+                            class="users rounded-circle"
+                          />
+                          <img
+                            src="./img/people4.jpeg"
+                            alt="people1"
+                            class="users rounded-circle"
+                          />
+                        </div>
+                      </td>
+                      <td>
+                        <span>72%</span>
+                        <div class="progress" style="height: 5px">
+                          <div
+                            class="progress-bar bg-danger"
+                            role="progressbar"
+                            style="width: 72%"
+                            aria-valuenow="72"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                          ></div>
+                        </div>
+                      </td>
+                      <td><i class="fas fa-ellipsis-v text-secondary"></i></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <img
+                          src="./img/react.png"
+                          alt="bootstrap-logo"
+                          class="project-logo me-3"
+                        />
+                        React Dashboard
+                      </td>
+                      <td>$4,400 USD</td>
+                      <td>
+                        <ul>
+                          <li class="on-schedule">on schedule</li>
+                        </ul>
+                      </td>
+                      <td>
+                        <div class="d-flex">
+                          <img
+                            src="./img/people1.jpeg"
+                            alt="people1"
+                            class="users rounded-circle"
+                          />
+                          <img
+                            src="./img/people2.jpeg"
+                            alt="people1"
+                            class="users rounded-circle"
+                          />
+                          <img
+                            src="./img/people3.jpg"
+                            alt="people1"
+                            class="users rounded-circle"
+                          />
+                          <img
+                            src="./img/people4.jpeg"
+                            alt="people1"
+                            class="users rounded-circle"
+                          />
+                        </div>
+                      </td>
+                      <td>
+                        <span>90%</span>
+                        <div class="progress" style="height: 5px">
+                          <div
+                            class="progress-bar bg-info"
+                            role="progressbar"
+                            style="width: 90%"
+                            aria-valuenow="90"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                          ></div>
+                        </div>
+                      </td>
+                      <td><i class="fas fa-ellipsis-v text-secondary"></i></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <img
+                          src="./img/vue.png"
+                          alt="bootstrap-logo"
+                          class="project-logo me-3"
+                        />
+                        Vue Paper UI Kit Dashboard
+                      </td>
+                      <td>$2,200 USD</td>
+                      <td>
+                        <ul>
+                          <li class="completed">completed</li>
+                        </ul>
+                      </td>
+                      <td>
+                        <div class="d-flex">
+                          <img
+                            src="./img/people1.jpeg"
+                            alt="people1"
+                            class="users rounded-circle"
+                          />
+                          <img
+                            src="./img/people2.jpeg"
+                            alt="people1"
+                            class="users rounded-circle"
+                          />
+                          <img
+                            src="./img/people3.jpg"
+                            alt="people1"
+                            class="users rounded-circle"
+                          />
+                          <img
+                            src="./img/people4.jpeg"
+                            alt="people1"
+                            class="users rounded-circle"
+                          />
+                        </div>
+                      </td>
+                      <td>
+                        <span>100%</span>
+                        <div class="progress" style="height: 5px">
+                          <div
+                            class="progress-bar bg-success"
+                            role="progressbar"
+                            style="width: 100%"
+                            aria-valuenow="100"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                          ></div>
+                        </div>
+                      </td>
+                      <td><i class="fas fa-ellipsis-v text-secondary"></i></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./../assets/js/bootstrap.min.js"></script>
+  </body>
+</html>
