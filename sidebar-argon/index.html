@@ -13,27 +13,32 @@
     <div class="row main-app background-main gx-0">
       <div class="col-md-2 bg-light shadow">
         <nav class="sidebar navbar navbar-expand-lg navbar-light. w-100">
-          <div class="container-fluid navbar-body">
-            <a class="navbar-brand navbar-logo-wrapp" href="#">
-              <img
-                src="./img/logo.png"
-                alt=""
-                class="navbar-logo m-auto d-block"
-              />
-              <p></p>
-            </a>
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarNav"
-              aria-controls="navbarNav"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
+          <div class="w-100 navbar-body">
+            <div
+              class="container-fluid d-flex justify-content-between align-items-center"
             >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
+              <a class="navbar-brand navbar-logo-wrapp w-100" href="#">
+                <img
+                  src="./img/logo.png"
+                  alt=""
+                  class="navbar-logo m-auto d-block"
+                />
+                <p></p>
+              </a>
+              <button
+                class="navbar-toggler h-25"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </div>
+
+            <div class="collapse navbar-collapse mt-4" id="navbarNav">
               <ul class="navbar-nav flex-column w-100">
                 <li class="nav-item ps-2">
                   <a class="nav-link" aria-current="page" href="#">
@@ -63,7 +68,7 @@
                     User</a
                   >
                 </li>
-                <li class="nav-item ps-2 border-start border-2 border-primary">
+                <li class="nav-item ps-2 border-start border-3 border-primary">
                   <a class="nav-link active" aria-current="page" href="#">
                     <i class="fas fa-list text-danger nav-item-icon"></i>
                     Table</a
@@ -81,7 +86,7 @@
                     Register</a
                   >
                 </li>
-                <div class="border-bottom border-1 mb-3"></div>
+                <div class="mx-3 border-bottom border-1 mb-3"></div>
 
                 <li class="nav-item ps-2">
                   <a class="nav-link" aria-current="page" href="#">
@@ -141,7 +146,7 @@
                 <input
                   type="text"
                   class="form-control rounded-pill text-white search-input border-3 border-white bg-transparent me-3"
-                  placeholder=" Search"
+                  placeholder="Search"
                 />
                 <img
                   src="./img/people2.jpeg"
@@ -170,7 +175,7 @@
                       <i class="fas fa-chart-bar m-auto"></i>
                     </div>
                   </div>
-                  <p class="m-0">
+                  <p class="m-0 text-secondary">
                     <span class="text-success me-3"
                       ><i class="fa fa-arrow-up" aria-hidden="true"></i>
                       3,38%</span
@@ -194,7 +199,7 @@
                       <i class="fas fa-chart-pie m-auto"></i>
                     </div>
                   </div>
-                  <p class="m-0">
+                  <p class="m-0 text-secondary">
                     <span class="text-danger me-3"
                       ><i class="fa fa-arrow-up" aria-hidden="true"></i>
                       3,38%</span
@@ -216,12 +221,12 @@
                       <i class="fas fa-users m-auto"></i>
                     </div>
                   </div>
-                  <p class="m-0">
+                  <p class="m-0 text-secondary">
                     <span class="text-orange me-3"
                       ><i class="fa fa-arrow-up" aria-hidden="true"></i>
                       3,38%</span
                     >
-                    Since last month
+                    Since yesterday
                   </p>
                 </div>
               </div>
@@ -238,7 +243,7 @@
                       <i class="fas fa-percent m-auto"></i>
                     </div>
                   </div>
-                  <p class="m-0">
+                  <p class="m-0 text-secondary">
                     <span class="text-success me-3"
                       ><i class="fa fa-arrow-up" aria-hidden="true"></i>
                       3,38%</span
@@ -549,31 +554,33 @@
                   </tbody>
                 </table>
               </div>
-              <nav aria-label="Page navigation example">
-                <ul class="pagination justify-content-end">
-                  <li class="page-item disabled">
-                    <a
-                      class="page-link"
-                      href="#"
-                      tabindex="-1"
-                      aria-disabled="true"
-                      >Previous</a
-                    >
-                  </li>
-                  <li class="page-item">
-                    <a class="page-link" href="#">1</a>
-                  </li>
-                  <li class="page-item">
-                    <a class="page-link" href="#">2</a>
-                  </li>
-                  <li class="page-item">
-                    <a class="page-link" href="#">3</a>
-                  </li>
-                  <li class="page-item">
-                    <a class="page-link" href="#">Next</a>
-                  </li>
-                </ul>
-              </nav>
+              <div class="pagination d-flex justify-content-end pe-4">
+                <div
+                  class="box-circle rounded-circle border border-secondary me-1 d-flex"
+                >
+                  <i class="fas fa-angle-left m-auto text-secondary"></i>
+                </div>
+                <div
+                  class="box-circle background-purple rounded-circle me-1 d-flex"
+                >
+                  <span class="m-auto text-light">1</span>
+                </div>
+                <div
+                  class="box-circle rounded-circle border border-secondary text-secondary me-1 d-flex"
+                >
+                  <span class="m-auto ">2</span>
+                </div>
+                <div
+                  class="box-circle rounded-circle border border-secondary text-secondary me-1 d-flex"
+                >
+                  <span class="m-auto">3</span>
+                </div>
+                <div
+                  class="box-circle rounded-circle border border-secondary text-secondary me-1 d-flex"
+                >
+                  <i class="fas fa-angle-right m-auto"></i>
+                </div>
+              </div>
             </div>
 
             <div class="card border-0 shadow background-dark py-3 mb-5">
@@ -583,7 +590,9 @@
               <div class="table-responsive">
                 <table class="table table-responsive">
                   <thead class="background-secondary">
-                    <tr class="text-uppercase text-primary opacity-50">
+                    <tr
+                      class="text-uppercase text-primary opacity-50 border-blue-dark"
+                    >
                       <th scope="col">project</th>
                       <th scope="col">budget</th>
                       <th scope="col">status</th>
@@ -593,14 +602,20 @@
                     </tr>
                   </thead>
                   <tbody class="text-light">
-                    <tr>
+                    <tr class="border-blue-dark">
                       <td>
-                        <img
-                          src="./img/bootstrap.png"
-                          alt="bootstrap-logo"
-                          class="project-logo me-3"
-                        />
-                        Argon Design System
+                        <div class="d-flex align-items-center">
+                          <div
+                            class="image-circle me-3 rounded-circle bg-white d-flex"
+                          >
+                            <img
+                              src="./img/bootstrap.png"
+                              alt="bootstrap-logo"
+                              class="project-logo m-auto"
+                            />
+                          </div>
+                          <span>Argon Design System</span>
+                        </div>
                       </td>
                       <td>$2,500 USD</td>
                       <td>
@@ -649,14 +664,20 @@
                         <i class="fas fa-ellipsis-v text-secondary"></i>
                       </td>
                     </tr>
-                    <tr>
+                    <tr class="border-blue-dark">
                       <td>
-                        <img
-                          src="./img/angular.png"
-                          alt="bootstrap-logo"
-                          class="project-logo me-3"
-                        />
-                        Angular Now UI Kit Pro
+                        <div class="d-flex align-items-center">
+                          <div
+                            class="image-circle me-3 rounded-circle bg-white d-flex"
+                          >
+                            <img
+                              src="./img/angular.png"
+                              alt="bootstrap-logo"
+                              class="project-logo m-auto"
+                            />
+                          </div>
+                          <span>Angular Now UI Kit Pro</span>
+                        </div>
                       </td>
                       <td>$1,800 USD</td>
                       <td>
@@ -705,14 +726,20 @@
                         <i class="fas fa-ellipsis-v text-secondary"></i>
                       </td>
                     </tr>
-                    <tr>
+                    <tr class="border-blue-dark">
                       <td>
-                        <img
-                          src="./img/diamond.png"
-                          alt="bootstrap-logo"
-                          class="project-logo me-3"
-                        />
-                        Black Dashboard
+                        <div class="d-flex align-items-center">
+                          <div
+                            class="image-circle me-3 rounded-circle bg-white d-flex"
+                          >
+                            <img
+                              src="./img/diamond.png"
+                              alt="bootstrap-logo"
+                              class="project-logo m-auto"
+                            />
+                          </div>
+                          <span>Black Dashboard</span>
+                        </div>
                       </td>
                       <td>$3,150 USD</td>
                       <td>
@@ -761,14 +788,20 @@
                         <i class="fas fa-ellipsis-v text-secondary"></i>
                       </td>
                     </tr>
-                    <tr>
+                    <tr class="border-blue-dark">
                       <td>
-                        <img
-                          src="./img/react.png"
-                          alt="bootstrap-logo"
-                          class="project-logo me-3"
-                        />
-                        React Dashboard
+                        <div class="d-flex align-items-center">
+                          <div
+                            class="image-circle me-3 rounded-circle bg-white d-flex"
+                          >
+                            <img
+                              src="./img/react.png"
+                              alt="bootstrap-logo"
+                              class="project-logo m-auto"
+                            />
+                          </div>
+                          <span>React Dashboard</span>
+                        </div>
                       </td>
                       <td>$4,400 USD</td>
                       <td>
@@ -817,14 +850,20 @@
                         <i class="fas fa-ellipsis-v text-secondary"></i>
                       </td>
                     </tr>
-                    <tr>
+                    <tr class="border-blue-dark">
                       <td>
-                        <img
-                          src="./img/vue.png"
-                          alt="bootstrap-logo"
-                          class="project-logo me-3"
-                        />
-                        Vue Paper UI Kit Dashboard
+                        <div class="d-flex align-items-center">
+                          <div
+                            class="image-circle me-3 rounded-circle bg-white d-flex"
+                          >
+                            <img
+                              src="./img/vue.png"
+                              alt="bootstrap-logo"
+                              class="project-logo m-auto"
+                            />
+                          </div>
+                          <span>Vue Paper UI Kit Dashboard</span>
+                        </div>
                       </td>
                       <td>$2,200 USD</td>
                       <td>
