@@ -6,7 +6,6 @@
 
 /* Global Style Start */
 
-
 .background-purple {
   background-color: #5c67e1;
 }
@@ -30,23 +29,23 @@
 }
 
 .background-dark {
-    background-color: #162644;
+  background-color: #162644;
 }
 
 .background-main {
-    background-color: #f6f8fe;
+  background-color: #f6f8fe;
 }
 
 .background-gradient {
-    background-image: linear-gradient(to right, #5665e0, #7655e0);
+  background-image: linear-gradient(to right, #5665e0, #7655e0);
 }
 
 /* Global Style End */
 
 
-.sidebar {
-  /* display: none; */
-}
+/* .sidebar {
+  display: none;
+} */
 
 td,
 th {
@@ -65,15 +64,16 @@ th {
   width: 20%;
 }
 
-.profile-image, .users {
+.profile-image,
+.users {
   width: 40px;
   height: 40px;
   object-fit: cover;
 }
 
-.users{
-    margin-right: -15px;
-    border: 3px solid white;
+.users {
+  margin-right: -15px;
+  border: 3px solid white;
 }
 
 .project-logo {
@@ -86,17 +86,25 @@ th {
   width: 50%;
 }
 
+.search-input::placeholder {
+  color: white;
+}
+
+.search-input::placeholder::before {
+  content: "&#xF002";
+}
+
 .card-icon {
   width: 50px;
   height: 50px;
 }
 
 ul {
-    list-style: none;
-    padding: 0px 12px;
+  list-style: none;
+  padding: 0px 12px;
 }
 ul .pending::before {
-  content: "\2022"; 
+  content: "\2022";
   color: #fa5838;
   font-weight: bolder;
   display: inline-block;
@@ -104,7 +112,7 @@ ul .pending::before {
   margin-left: -1em;
 }
 ul .completed::before {
-  content: "\2022"; 
+  content: "\2022";
   color: #28c77e;
   font-weight: bolder;
   display: inline-block;
@@ -112,7 +120,7 @@ ul .completed::before {
   margin-left: -1em;
 }
 ul .delayed::before {
-  content: "\2022"; 
+  content: "\2022";
   color: red;
   font-weight: bolder;
   display: inline-block;
@@ -120,7 +128,7 @@ ul .delayed::before {
   margin-left: -1em;
 }
 ul .on-schedule::before {
-  content: "\2022"; 
+  content: "\2022";
   color: #27cbee;
   font-weight: bolder;
   display: inline-block;
@@ -128,7 +136,7 @@ ul .on-schedule::before {
   margin-left: -1em;
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
   .navbar-body {
     display: flex !important;
   }
@@ -139,9 +147,14 @@ ul .on-schedule::before {
 
   .nav-user {
     width: 100% !important;
+    justify-content: space-between !important;
   }
 
   .nav-item-icon {
     width: 10%;
+  }
+
+  .background-element {
+    height: 50% !important;
   }
 }
