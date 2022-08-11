@@ -67,6 +67,11 @@ th {
   font-size: 12px;
 }
 
+thead > tr{
+  color:#9093a3;
+
+}
+
 .navbar-body {
   display: inline-block !important;
 }
